@@ -1,0 +1,135 @@
+body{
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+}
+#wrapper{
+	width: 100%;
+	height: 100%;
+}
+#header-container{
+	width: 100%;
+	height: 12%;
+	background: green;
+}
+
+@keyframes cube-rotate{
+	0%{transform: rotateX(0deg) rotateY(0deg);}
+	100%{transform: rotateX(360deg) rotateY(360deg);}
+}
+#cube:hover{
+	animation-play-state: paused;
+}
+#content-container{
+	width: 100%;
+	height: 68%;
+	position: fixed;
+	left: 0px;
+	overflow: auto;
+}
+#cube-container{
+	width: 200px;
+	height: 200px;
+	perspective: 600px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	/*overflow: auto;*/
+}
+#cube{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	animation: cube-rotate;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.face{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	opacity: 0.7;
+	border: 1px solid black;
+}
+.face:nth-child(1){
+	transform: rotateY(0deg) translateZ(100px);
+}
+.face:nth-child(2){
+	transform: rotateY(90deg) translateZ(100px);
+}
+.face:nth-child(3){
+	transform: rotateY(180deg) translateZ(100px);
+}
+.face:nth-child(4){
+	transform: rotateY(-90deg) translateZ(100px);
+}
+.face:nth-child(5){
+	transform: rotateX(90deg) translateZ(100px);
+}
+.face:nth-child(6){
+	transform: rotateX(-90deg) translateZ(100px);
+}
+
+#footer-container{
+	width: 100%;
+	height: 20%;
+	background: red;
+	display: flex;
+	position: fixed;
+	bottom: 0px;
+}
+#resume-btn{
+	position: relative;
+	width: 16.6%;
+	height: 100%;
+	background: black;
+}
+#classes-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: blue;
+}
+#github-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: white;
+}
+#linkedin-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: orange;
+}
+#about-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: yellow;
+}
+#quotes-btn{
+	position: relative;
+	width: 16.6%;
+	height: 100%;
+	background: green;
+}
+/*a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}*/
+span{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+p{
+	color: grey;
+}
