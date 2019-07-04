@@ -1,0 +1,33 @@
+body{
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+}
+#content-container{
+	width: 100%;
+	height: 100%;
+}
+
+#work-container{
+	width: 100%;
+/*	height: 35%;*/
+	border: 1px solid blue;
+}
+
+#side-container{
+	width: 100%;
+/*	height: 35%;*/
+	border: 1px solid blue;
+}
+
+#language-container{
+	width: 100%;
+/*	height: 30%;*/
+	border: 1px solid blue;
+}
+
+.content{
+	display: flex;
+}
+
+/*make into grid*/
