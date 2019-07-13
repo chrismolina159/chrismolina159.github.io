@@ -1,7 +1,8 @@
 /*Change cube container distance in media screen tablet and phone
 change positioning of containers in other media
 add hidden overflow to other media
-change font of heading in other media
+change font of heading and buttons in other media
+phone problem appears to be an overflow issue? positioning change did not solve it
 REMEMBER to change color of buttons when done testing media
 */
 
@@ -157,7 +158,6 @@ REMEMBER to change color of buttons when done testing media
 	p{
 		text-align: center;
 		color: white;
-		font-size: 18px;
 		letter-spacing: 0.3em;
 	}
 }
@@ -303,7 +303,6 @@ REMEMBER to change color of buttons when done testing media
 	p{
 		text-align: center;
 		color: white;
-		font-size: 18px;
 		letter-spacing: 0.3em;
 	}
 }
@@ -330,7 +329,7 @@ REMEMBER to change color of buttons when done testing media
 	#content-container{
 		width: 100%;
 		height: 76%;
-		position: fixed;
+		position: relative;
 		left: 0px;
 		background: rgba(165,238,237,0.41);
 	}
@@ -387,7 +386,7 @@ REMEMBER to change color of buttons when done testing media
 		width: 100%;
 		height: 14%;
 		display: flex;
-		position: fixed;
+		position: relative;
 		bottom: 0px;
 	}
 	.footer-btns{
@@ -400,7 +399,7 @@ REMEMBER to change color of buttons when done testing media
 		opacity: 1.0;
 	}
 	.btn-text{
-		font-size: 0.8em;
+		font-size: 0.5em;
 	}
 	#resume-btn{
 		position: relative;
@@ -449,7 +448,6 @@ REMEMBER to change color of buttons when done testing media
 	p{
 		text-align: center;
 		color: white;
-		font-size: 18px;
 		letter-spacing: 0.3em;
 	}
 }*/
@@ -631,7 +629,6 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		font-size: 18px;
 		letter-spacing: 0.3em;
 	}
 }
@@ -658,7 +655,7 @@ body{
 	#content-container{
 		width: 100%;
 		height: 76%;
-		position: relative;
+		position: fixed;
 		left: 0px;
 		background: rgba(165,238,237,0.41);
 	}
@@ -729,7 +726,7 @@ body{
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		position: relative;
+		position: fixed;
 		bottom: 0px;
 	}
 	.footer-btns{
@@ -797,7 +794,6 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		font-size: 18px;
 		letter-spacing: 0.3em;
 	}
 }
@@ -824,7 +820,7 @@ body{
 	#content-container{
 		width: 100%;
 		height: 76%;
-		position: fixed;
+		position: relative;
 		left: 0px;
 		background: rgba(165,238,237,0.41);
 	}
@@ -895,7 +891,7 @@ body{
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		position: fixed;
+		position: relative;
 		bottom: 0px;
 	}
 	.footer-btns{
@@ -914,7 +910,7 @@ body{
 		opacity: 1.0;
 	}
 	.btn-text{
-		font-size: 0.8em;
+		font-size: 0.5em;
 	}
 	#resume-btn{
 		position: relative;
@@ -963,7 +959,6 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		font-size: 18px;
 		letter-spacing: 0.3em;
 	}
 }
