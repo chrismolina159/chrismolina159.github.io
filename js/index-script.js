@@ -7,6 +7,7 @@ var str5 = "LinkedIn";				//8
 var str6 = "About Me";				//8
 var str7 = "Quotes";				//6
 var headerSpeed = 400;
+
 //Possibly add margin line for extra typewriting effect
 //add media for tablet and phone
 function typeWrite(){
