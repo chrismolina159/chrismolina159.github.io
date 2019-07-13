@@ -20,6 +20,7 @@ body{
 #typewriter{
 	color: white;
 	letter-spacing: 0.8em;
+	font-family: 'Old Standard TT', serif;
 }
 
 @keyframes cube-rotate{
@@ -102,6 +103,7 @@ body{
 .footer-btns{
 	opacity: 0.75;
 	transition: transform 1.12s, opacity 1s;
+	font-family: 'EB Garamond', serif;
 }
 .footer-btns:hover{
 	transform: scale(1.2,1.2);
