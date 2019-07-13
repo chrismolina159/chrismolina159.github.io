@@ -39,10 +39,10 @@ $(document).ready(function(){
 	
 	typeWrite();
 
-	$("#resume-btn").click(function(){
-		$("#cube").css("animation","test");
-		// $("#cube").css("animation-duration","2.5s");
-		// $("#cube").css("animation-timing-function","linear");
-		// $("#cube").css("animation-iteration-count", "2");
-	});
+	// $("#resume-btn").click(function(){
+	// 	$("#cube").css("animation","test");
+	// 	$("#cube").css("animation-duration","2.5s");
+	// 	$("#cube").css("animation-timing-function","linear");
+	// 	$("#cube").css("animation-iteration-count", "2");
+	// });
 });
