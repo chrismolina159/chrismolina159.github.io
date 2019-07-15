@@ -11,7 +11,7 @@ h2{
 }*/
 
 body{
-	background: rgba(255,13,251,0.24);
+	background-color: rgba(255,13,251,0.24);
 }
 #content-container{
 	display: -ms-grid;
