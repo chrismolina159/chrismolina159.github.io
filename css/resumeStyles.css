@@ -1,33 +1,15 @@
 body{
-	margin: 0;
+	/*margin: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 100vh;*/
+	background: rgba(255,13,251,0.24);
 }
 #content-container{
-	width: 100%;
-	height: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	/*border: 1px solid black;*/
 }
-
-#work-container{
-	width: 100%;
-/*	height: 35%;*/
-	border: 1px solid blue;
+h2{
+	border-bottom: 1px solid black
 }
-
-#side-container{
-	width: 100%;
-/*	height: 35%;*/
-	border: 1px solid blue;
-}
-
-#language-container{
-	width: 100%;
-/*	height: 30%;*/
-	border: 1px solid blue;
-}
-
-.content{
-	display: flex;
-}
-
-/*make into grid*/

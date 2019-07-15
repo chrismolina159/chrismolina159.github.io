@@ -1,8 +1,10 @@
 /*Change cube container distance in media screen tablet and phone
+ADD PHONE LANDSCAPE ORIENTATION MEDIA QUERY
+ADD TABLET LANDSCAPE MEDIA QUERY
 REMEMBER to change color of buttons when done testing media
 */
 
-/*body{
+body{
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
@@ -10,9 +12,9 @@ REMEMBER to change color of buttons when done testing media
 @keyframes cube-rotate{
 	0%{transform: rotateX(0deg) rotateY(0deg);}
 	100%{transform: rotateX(360deg) rotateY(360deg);}
-}*/
+}
 /*Computer/laptop screen*/
-/*@media screen and (min-width: 769px){
+@media screen and (min-width: 769px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -157,9 +159,9 @@ REMEMBER to change color of buttons when done testing media
 		color: white;
 		letter-spacing: 0.3em;
 	}
-}*/
+}
 /*Tablet Portrait orientation*/
-/*@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -277,7 +279,7 @@ REMEMBER to change color of buttons when done testing media
 		position: relative;
 		width: 16.7%;
 		height: 100%;
-		background: rgba(230,51,235,.92);
+		background: rgba(30,51,235,.92);
 	}
 	#about-btn{
 		position: relative;
@@ -304,9 +306,9 @@ REMEMBER to change color of buttons when done testing media
 		color: white;
 		letter-spacing: 0.17em;
 	}
-}*/
+}
 /*Cellphone portrait orientation*/
-/*@media screen and (max-width: 480px){
+@media screen and (max-width: 480px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -400,7 +402,7 @@ REMEMBER to change color of buttons when done testing media
 		opacity: 1.0;
 	}
 	.btn-text{
-		font-size: 0.8em;
+		font-size: 0.76em;
 	}
 	#resume-btn{
 		position: relative;
@@ -436,7 +438,7 @@ REMEMBER to change color of buttons when done testing media
 		position: relative;
 		width: 16.6%;
 		height: 100%;
-		background: rgba(200,180,255,1);
+		background: rgba(0,180,255,1);
 	}
 	span{
 		position: absolute;
@@ -449,12 +451,12 @@ REMEMBER to change color of buttons when done testing media
 	p{
 		text-align: center;
 		color: white;
-		letter-spacing: 0.3em;
+		letter-spacing: 0.2em;
 	}
-}*/
+}
 
 
-body{
+/*body{
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
@@ -466,9 +468,9 @@ body{
 @keyframes cube-rotate{
 	0%{-webkit-transform: rotateX(0deg) rotateY(0deg);transform: rotateX(0deg) rotateY(0deg);}
 	100%{-webkit-transform: rotateX(360deg) rotateY(360deg);transform: rotateX(360deg) rotateY(360deg);}
-}
+}*/
 /*Computer/laptop screen*/
-@media screen and (min-width: 769px){
+/*@media screen and (min-width: 769px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -482,7 +484,6 @@ body{
 	#header-content{
 		position: absolute;
 		height: 100%;
-		/*overflow: auto;*/
 	}
 	#typewriter{
 		color: white;
@@ -634,9 +635,9 @@ body{
 		color: white;
 		letter-spacing: 0.3em;
 	}
-}
+}*/
 /*Tablet Portrait orientation*/
-@media screen and (min-width: 481px) and (max-width: 768px){
+/*@media screen and (min-width: 481px) and (max-width: 768px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -801,9 +802,9 @@ body{
 		color: white;
 		letter-spacing: 0.17em;
 	}
-}
+}*/
 /*Cellphone portrait orientation*/
-@media screen and (max-width: 480px){
+/*@media screen and (max-width: 480px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -968,4 +969,4 @@ body{
 		color: white;
 		letter-spacing: 0.3em;
 	}
-}
+}*/
