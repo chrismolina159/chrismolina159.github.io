@@ -1,8 +1,4 @@
 /*Change cube container distance in media screen tablet and phone
-change positioning of containers in other media
-add hidden overflow to other media
-change font of heading and buttons in other media
-phone problem appears to be an overflow issue? positioning change did not solve it
 REMEMBER to change color of buttons when done testing media
 */
 
@@ -14,15 +10,16 @@ REMEMBER to change color of buttons when done testing media
 @keyframes cube-rotate{
 	0%{transform: rotateX(0deg) rotateY(0deg);}
 	100%{transform: rotateX(360deg) rotateY(360deg);}
-}
-@media screen and (min-width: 768px){
+}*/
+/*Computer/laptop screen*/
+/*@media screen and (min-width: 769px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
 	}
 	#header-container{
 		width: 100%;
-		height: 12%;
+		height: 11%;
 		background: rgba(165, 238, 190, 1);
 		position: relative;
 	}
@@ -37,7 +34,7 @@ REMEMBER to change color of buttons when done testing media
 	}
 	#content-container{
 		width: 100%;
-		height: 68%;
+		height: 69%;
 		position: relative;
 		left: 0px;
 		background: rgba(165,238,237,0.41);
@@ -160,8 +157,9 @@ REMEMBER to change color of buttons when done testing media
 		color: white;
 		letter-spacing: 0.3em;
 	}
-}
-@media screen and (min-width: 481px) and (max-width: 767px){
+}*/
+/*Tablet Portrait orientation*/
+/*@media screen and (min-width: 481px) and (max-width: 768px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -178,13 +176,13 @@ REMEMBER to change color of buttons when done testing media
 	}
 	#typewriter{
 		color: white;
-		letter-spacing: 0.8em;
+		letter-spacing: 0.45em;
 		font-family: 'Old Standard TT', serif;
 	}
 	#content-container{
 		width: 100%;
 		height: 76%;
-		position: fixed;
+		position: relative;
 		left: 0px;
 		background: rgba(165,238,237,0.41);
 	}
@@ -241,8 +239,9 @@ REMEMBER to change color of buttons when done testing media
 		width: 100%;
 		height: 14%;
 		display: flex;
-		position: fixed;
+		position: relative;
 		bottom: 0px;
+		overflow: hidden;
 	}
 	.footer-btns{
 		opacity: 0.75;
@@ -254,7 +253,7 @@ REMEMBER to change color of buttons when done testing media
 		opacity: 1.0;
 	}
 	.btn-text{
-		font-size: 1.15em;
+		font-size: 1.09em;
 	}
 	#resume-btn{
 		position: relative;
@@ -303,17 +302,18 @@ REMEMBER to change color of buttons when done testing media
 	p{
 		text-align: center;
 		color: white;
-		letter-spacing: 0.3em;
+		letter-spacing: 0.17em;
 	}
-}
-@media screen and (max-width: 480px){
+}*/
+/*Cellphone portrait orientation*/
+/*@media screen and (max-width: 480px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
 	}
 	#header-container{
 		width: 100%;
-		height: 10%;
+		height: 11%;
 		background: rgba(165, 238, 190, 1);
 		position: relative;
 	}
@@ -323,23 +323,23 @@ REMEMBER to change color of buttons when done testing media
 	}
 	#typewriter{
 		color: white;
-		letter-spacing: 0.8em;
+		letter-spacing: 0.3em;
 		font-family: 'Old Standard TT', serif;
 	}
 	#content-container{
 		width: 100%;
-		height: 76%;
+		height: 78%;
 		position: relative;
 		left: 0px;
 		background: rgba(165,238,237,0.41);
 	}
 	#cube-container{
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 		perspective: 600px;
 		margin: 0 auto;
 		position: relative;
-		top: 100px;
+		top: 150px;
 	}
 	#cube{
 		width: 100%;
@@ -353,41 +353,42 @@ REMEMBER to change color of buttons when done testing media
 	}
 	.face{
 		position: absolute;
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 		opacity: 0.7;
 		border: 1px solid black;
 	}
 	.face:nth-child(1){
 		background: rgba(255,0,0,0.5);
-		transform: rotateY(0deg) translateZ(100px);
+		transform: rotateY(0deg) translateZ(75px);
 	}
 	.face:nth-child(2){
 		background: rgba(0,0,255,0.5);
-		transform: rotateY(90deg) translateZ(100px);
+		transform: rotateY(90deg) translateZ(75px);
 	}
 	.face:nth-child(3){
 		background: rgba(0,255,0,0.5);
-		transform: rotateY(180deg) translateZ(100px);
+		transform: rotateY(180deg) translateZ(75px);
 	}
 	.face:nth-child(4){
 		background: rgba(0,255,255,0.5);
-		transform: rotateY(-90deg) translateZ(100px);
+		transform: rotateY(-90deg) translateZ(75px);
 	}
 	.face:nth-child(5){
 		background: rgba(255,255,0,0.5);
-		transform: rotateX(90deg) translateZ(100px);
+		transform: rotateX(90deg) translateZ(75px);
 	}
 	.face:nth-child(6){
 		background: rgba(255,0,255,0.5);
-		transform: rotateX(-90deg) translateZ(100px);
+		transform: rotateX(-90deg) translateZ(75px);
 	}
 	#footer-container{
 		width: 100%;
-		height: 14%;
+		height: 11%;
 		display: flex;
 		position: relative;
 		bottom: 0px;
+		overflow: hidden;
 	}
 	.footer-btns{
 		opacity: 0.75;
@@ -399,7 +400,7 @@ REMEMBER to change color of buttons when done testing media
 		opacity: 1.0;
 	}
 	.btn-text{
-		font-size: 0.5em;
+		font-size: 0.8em;
 	}
 	#resume-btn{
 		position: relative;
@@ -466,20 +467,22 @@ body{
 	0%{-webkit-transform: rotateX(0deg) rotateY(0deg);transform: rotateX(0deg) rotateY(0deg);}
 	100%{-webkit-transform: rotateX(360deg) rotateY(360deg);transform: rotateX(360deg) rotateY(360deg);}
 }
-@media screen and (min-width: 768px){
+/*Computer/laptop screen*/
+@media screen and (min-width: 769px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
 	}
 	#header-container{
 		width: 100%;
-		height: 12%;
+		height: 11%;
 		background: rgba(165, 238, 190, 1);
 		position: relative;
 	}
 	#header-content{
 		position: absolute;
 		height: 100%;
+		/*overflow: auto;*/
 	}
 	#typewriter{
 		color: white;
@@ -488,7 +491,7 @@ body{
 	}
 	#content-container{
 		width: 100%;
-		height: 68%;
+		height: 69%;
 		position: relative;
 		left: 0px;
 		background: rgba(165,238,237,0.41);
@@ -632,7 +635,8 @@ body{
 		letter-spacing: 0.3em;
 	}
 }
-@media screen and (min-width: 481px) and (max-width: 767px){
+/*Tablet Portrait orientation*/
+@media screen and (min-width: 481px) and (max-width: 768px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -649,13 +653,13 @@ body{
 	}
 	#typewriter{
 		color: white;
-		letter-spacing: 0.8em;
+		letter-spacing: 0.45em;
 		font-family: 'Old Standard TT', serif;
 	}
 	#content-container{
 		width: 100%;
 		height: 76%;
-		position: fixed;
+		position: relative;
 		left: 0px;
 		background: rgba(165,238,237,0.41);
 	}
@@ -726,8 +730,9 @@ body{
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-		position: fixed;
+		position: relative;
 		bottom: 0px;
+		overflow: hidden;
 	}
 	.footer-btns{
 		opacity: 0.75;
@@ -745,7 +750,7 @@ body{
 		opacity: 1.0;
 	}
 	.btn-text{
-		font-size: 1.15em;
+		font-size: 1.09em;
 	}
 	#resume-btn{
 		position: relative;
@@ -794,9 +799,10 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		letter-spacing: 0.3em;
+		letter-spacing: 0.17em;
 	}
 }
+/*Cellphone portrait orientation*/
 @media screen and (max-width: 480px){
 	#wrapper{
 		width: 100%;
@@ -804,7 +810,7 @@ body{
 	}
 	#header-container{
 		width: 100%;
-		height: 10%;
+		height: 11%;
 		background: rgba(165, 238, 190, 1);
 		position: relative;
 	}
@@ -814,24 +820,24 @@ body{
 	}
 	#typewriter{
 		color: white;
-		letter-spacing: 0.8em;
+		letter-spacing: 0.3em;
 		font-family: 'Old Standard TT', serif;
 	}
 	#content-container{
 		width: 100%;
-		height: 76%;
+		height: 78%;
 		position: relative;
 		left: 0px;
 		background: rgba(165,238,237,0.41);
 	}
 	#cube-container{
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 		-webkit-perspective: 600px;
 		        perspective: 600px;
 		margin: 0 auto;
 		position: relative;
-		top: 100px;
+		top: 150px;
 	}
 	#cube{
 		width: 100%;
@@ -850,49 +856,50 @@ body{
 	}
 	.face{
 		position: absolute;
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 		opacity: 0.7;
 		border: 1px solid black;
 	}
 	.face:nth-child(1){
 		background: rgba(255,0,0,0.5);
-		-webkit-transform: rotateY(0deg) translateZ(100px);
-		        transform: rotateY(0deg) translateZ(100px);
+		-webkit-transform: rotateY(0deg) translateZ(75px);
+		        transform: rotateY(0deg) translateZ(75px);
 	}
 	.face:nth-child(2){
 		background: rgba(0,0,255,0.5);
-		-webkit-transform: rotateY(90deg) translateZ(100px);
-		        transform: rotateY(90deg) translateZ(100px);
+		-webkit-transform: rotateY(90deg) translateZ(75px);
+		        transform: rotateY(90deg) translateZ(75px);
 	}
 	.face:nth-child(3){
 		background: rgba(0,255,0,0.5);
-		-webkit-transform: rotateY(180deg) translateZ(100px);
-		        transform: rotateY(180deg) translateZ(100px);
+		-webkit-transform: rotateY(180deg) translateZ(75px);
+		        transform: rotateY(180deg) translateZ(75px);
 	}
 	.face:nth-child(4){
 		background: rgba(0,255,255,0.5);
-		-webkit-transform: rotateY(-90deg) translateZ(100px);
-		        transform: rotateY(-90deg) translateZ(100px);
+		-webkit-transform: rotateY(-90deg) translateZ(75px);
+		        transform: rotateY(-90deg) translateZ(75px);
 	}
 	.face:nth-child(5){
 		background: rgba(255,255,0,0.5);
-		-webkit-transform: rotateX(90deg) translateZ(100px);
-		        transform: rotateX(90deg) translateZ(100px);
+		-webkit-transform: rotateX(90deg) translateZ(75px);
+		        transform: rotateX(90deg) translateZ(75px);
 	}
 	.face:nth-child(6){
 		background: rgba(255,0,255,0.5);
-		-webkit-transform: rotateX(-90deg) translateZ(100px);
-		        transform: rotateX(-90deg) translateZ(100px);
+		-webkit-transform: rotateX(-90deg) translateZ(75px);
+		        transform: rotateX(-90deg) translateZ(75px);
 	}
 	#footer-container{
 		width: 100%;
-		height: 14%;
+		height: 11%;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
 		position: relative;
 		bottom: 0px;
+		overflow: hidden;
 	}
 	.footer-btns{
 		opacity: 0.75;
@@ -910,7 +917,7 @@ body{
 		opacity: 1.0;
 	}
 	.btn-text{
-		font-size: 0.5em;
+		font-size: 0.8em;
 	}
 	#resume-btn{
 		position: relative;
