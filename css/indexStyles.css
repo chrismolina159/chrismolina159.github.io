@@ -102,7 +102,8 @@ body{
 	.footer-btns{
 		opacity: 0.75;
 		transition: transform 1.12s, opacity 1s;
-		font-family: 'EB Garamond', serif;
+		/*font-family: 'EB Garamond', serif;*/
+		font-family: 'Changa One', cursive;
 	}
 	.footer-btns:hover{
 		transform: scale(1.2,1.2);
