@@ -4,7 +4,7 @@ Fix shading of button to turn off if button is clicked again
 Can possibly use another grid here.
 */
 body{
-	background-color: rgba(152,7,235,.22) !important;
+	background-color: rgba(165,238,237,0.41) !important;
 }
 .dropdown{
 	position: relative;
@@ -14,7 +14,7 @@ body{
 	background-color: #ddd;
 }
 .dropbtn{
-	background-color: rgba(129,174,255,1.0); /*just the background color of the entire box change later*/
+	background-color: rgba(152,7,235,.92); /*just the background color of the entire box change later*/
 	padding: 16px; /*edit as see fit*/
 	border: none;
 	cursor: pointer;
@@ -29,10 +29,8 @@ body{
 	display: none;
 	position: relative;
 	background-color: #f1f1f1;
-	/*min-width: 160px;*/
 	width: 100vw;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*needs webkit prefixes for other browsers adds shading around the content*/
-	/*z-index: 1; necessary?*/
 }
 
 .dropdown-content p{
