@@ -11,18 +11,18 @@ body{
 	display: block;				/*might need to change this*/
 }
 .dropdown a:hover {
-	background-color: #ddd;
+	background-color: rgba(84,2,131,1.0);
 }
 .dropbtn{
-	background-color: rgba(152,7,235,.92); /*just the background color of the entire box change later*/
-	padding: 16px; /*edit as see fit*/
+	background-color: rgba(152,7,235,.82);	/*just the background color of the entire box change later*/
+	padding: 16px; 							/*edit as see fit*/
 	border: none;
 	cursor: pointer;
 	box-shadow: 3px 7px 8px 4px rgba(0,0,0,0.3);
 	color: white;
 }
 .dropbtn:hover{
-	background-color: rgba(200,174,255,1.0); /*darkens on click and remains dark until click somewhere else.  doesn't undark upon clicking again*/
+	background-color: rgba(101,10,142,1.0); /*darkens on click and remains dark until click somewhere else.  doesn't undark upon clicking again*/
 }
 
 .dropdown-content{
