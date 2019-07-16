@@ -32,7 +32,8 @@ body{
 	#typewriter{
 		color: white;
 		letter-spacing: 0.8em;
-		font-family: 'Old Standard TT', serif;
+		/*font-family: 'Old Standard TT', serif;*/
+		font-family: 'Changa One', cursive;
 	}
 	#content-container{
 		width: 100%;
