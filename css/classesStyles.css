@@ -1,0 +1,47 @@
+/*
+Change color of buttons and button text.
+Fix shading of button to turn off if button is clicked again
+Can possibly use another grid here.
+*/
+body{
+	background-color: rgba(152,7,235,.22) !important;
+}
+.dropdown{
+	position: relative;
+	display: block;				/*might need to change this*/
+}
+.dropdown a:hover {
+	background-color: #ddd;
+}
+.dropbtn{
+	background-color: rgba(129,174,255,1.0); /*just the background color of the entire box change later*/
+	padding: 16px; /*edit as see fit*/
+	border: none;
+	cursor: pointer;
+	box-shadow: 3px 7px 8px 4px rgba(0,0,0,0.3);
+	color: white;
+}
+.dropbtn:hover{
+	background-color: rgba(200,174,255,1.0); /*darkens on click and remains dark until click somewhere else.  doesn't undark upon clicking again*/
+}
+
+.dropdown-content{
+	display: none;
+	position: relative;
+	background-color: #f1f1f1;
+	/*min-width: 160px;*/
+	width: 100vw;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*needs webkit prefixes for other browsers adds shading around the content*/
+	/*z-index: 1; necessary?*/
+}
+
+.dropdown-content p{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none; /*doesn't change anything that I see*/
+	display: block;
+}
+
+.show {
+	display: block;
+}

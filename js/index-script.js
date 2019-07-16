@@ -9,7 +9,6 @@ var str7 = "Quotes";				//6
 var headerSpeed = 400;
 
 //Possibly add margin line for extra typewriting effect
-//add media for tablet and phone
 function typeWrite(){
 
 	if(i < str3.length){
