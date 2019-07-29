@@ -22,32 +22,46 @@ $(document).ready(function(){
 					document.getElementById(id).style.backgroundColor = "rgba(152,7,235,.82)";
 				break;
 			case "discrete-btn":
-				document.getElementById("discrete-content").classList.toggle("show");
-				document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				if(document.getElementById("discrete-content").classList.toggle("show"))
+					document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				else
+					document.getElementById(id).style.backgroundColor = "rgba(152,7,235,.82)";
 				break;
 			case "datastructs-btn":
-				document.getElementById("datastructs-content").classList.toggle("show");
-				document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				if(document.getElementById("datastructs-content").classList.toggle("show"))
+					document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				else
+					document.getElementById(id).style.backgroundColor = "rgba(152,7,235,.82)";
 				break;
 			case "algos-btn":
-				document.getElementById("algos-content").classList.toggle("show");
-				document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				if(document.getElementById("algos-content").classList.toggle("show"))
+					document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				else
+					document.getElementById(id).style.backgroundColor = "rgba(152,7,235,.82)";
 				break;
 			case "cso-btn":
-				document.getElementById("cso-content").classList.toggle("show");
-				document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				if(document.getElementById("cso-content").classList.toggle("show"))
+					document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				else
+					document.getElementById(id).style.backgroundColor = "rgba(152,7,235,.82)";
 				break;
 			case "os-btn":
-				document.getElementById("os-content").classList.toggle("show");
-				document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				if(document.getElementById("os-content").classList.toggle("show"))
+					document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				else
+					document.getElementById(id).style.backgroundColor = "rgba(152,7,235,.82)";
 				break;
 			case "linear-btn":
-				document.getElementById("linear-content").classList.toggle("show");
-				document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				if(document.getElementById("linear-content").classList.toggle("show"))
+					document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				else
+					document.getElementById(id).style.backgroundColor = "rgba(152,7,235,.82)";
 				break;
 			case "parallel-btn":
-				document.getElementById("parallel-content").classList.toggle("show");
-				document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				if(document.getElementById("parallel-content").classList.toggle("show"))
+					document.getElementById(id).style.backgroundColor = "rgba(101,10,142,1.0)";
+				else
+					document.getElementById(id).style.backgroundColor = "rgba(152,7,235,.82)";
 				break;
 			default:
 				break;
