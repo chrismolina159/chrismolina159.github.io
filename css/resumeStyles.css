@@ -1,17 +1,28 @@
 /*body{
-	background-color: rgba(255,13,251,0.24) !important;
+	background-color: rgba(165,238,237,0.41) !important;
+}
+h2{
+	border-bottom: 1px solid black !important;
+	font-family: 'Changa One', cursive;
+}
+li{
+	font-family: 'Roboto', sans-serif;
 }
 #content-container{
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto auto;
-}
-h2{
-	border-bottom: 1px solid black !important;
 }*/
 
 body{
 	background-color: rgba(165,238,237,0.41) !important;
+}
+h2{
+	border-bottom: 1px solid black !important;
+	font-family: 'Changa One', cursive;
+}
+li{
+	font-family: 'Roboto', sans-serif;
 }
 #content-container{
 	display: -ms-grid;
@@ -32,7 +43,4 @@ body{
 #content-container > *:nth-child(3){
 	-ms-grid-row: 3;
 	-ms-grid-column: 1;
-}
-h2{
-	border-bottom: 1px solid black !important;
 }

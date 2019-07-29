@@ -1,10 +1,9 @@
 /*Change cube container distance in media screen tablet and phone landscape
 ADD PHONE LANDSCAPE ORIENTATION MEDIA QUERY
 ADD TABLET LANDSCAPE ORIENTATION MEDIA QUERY
-REMEMBER to change color of buttons when done testing media
 */
 
-body{
+/*body{
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
@@ -12,9 +11,9 @@ body{
 @keyframes cube-rotate{
 	0%{transform: rotateX(0deg) rotateY(0deg);}
 	100%{transform: rotateX(360deg) rotateY(360deg);}
-}
+}*/
 /*Computer/laptop screen*/
-@media screen and (min-width: 769px){
+/*@media screen and (min-width: 769px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -32,8 +31,6 @@ body{
 	#typewriter{
 		color: white;
 		letter-spacing: 0.8em;
-		/*font-family: 'Old Standard TT', serif;*/
-		/*font-family: 'Changa One', cursive;*/
 		font-family: "Press Start 2P", cursive;
 	}
 	#content-container{
@@ -103,7 +100,6 @@ body{
 	.footer-btns{
 		opacity: 0.75;
 		transition: transform 1.12s, opacity 1s;
-		/*font-family: 'EB Garamond', serif;*/
 		font-family: 'Changa One', cursive;
 
 	}
@@ -161,11 +157,11 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		letter-spacing: 0.3em;
+		letter-spacing: 0.05em;
 	}
-}
+}*/
 /*Tablet Portrait orientation*/
-@media screen and (min-width: 481px) and (max-width: 768px){
+/*@media screen and (min-width: 481px) and (max-width: 768px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -183,7 +179,7 @@ body{
 	#typewriter{
 		color: white;
 		letter-spacing: 0.45em;
-		font-family: 'Old Standard TT', serif;
+		font-family: "Press Start 2P", cursive;
 	}
 	#content-container{
 		width: 100%;
@@ -252,7 +248,7 @@ body{
 	.footer-btns{
 		opacity: 0.75;
 		transition: transform 1.12s, opacity 1s;
-		font-family: 'EB Garamond', serif;
+		font-family: 'Changa One', cursive;
 	}
 	.footer-btns:hover{
 		transform: scale(1.2,1.2);
@@ -308,11 +304,10 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		letter-spacing: 0.17em;
 	}
-}
+}*/
 /*Cellphone portrait orientation*/
-@media screen and (max-width: 480px){
+/*@media screen and (max-width: 480px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -330,7 +325,7 @@ body{
 	#typewriter{
 		color: white;
 		letter-spacing: 0.3em;
-		font-family: 'Old Standard TT', serif;
+		font-family: "Press Start 2P", cursive;
 	}
 	#content-container{
 		width: 100%;
@@ -399,7 +394,7 @@ body{
 	.footer-btns{
 		opacity: 0.75;
 		transition: transform 1.12s, opacity 1s;
-		font-family: 'EB Garamond', serif;
+		font-family: 'Changa One', cursive;
 	}
 	.footer-btns:hover{
 		transform: scale(1.2,1.2);
@@ -455,12 +450,11 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		letter-spacing: 0.2em;
 	}
-}
+}*/
 
 
-/*body{
+body{
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
@@ -472,9 +466,9 @@ body{
 @keyframes cube-rotate{
 	0%{-webkit-transform: rotateX(0deg) rotateY(0deg);transform: rotateX(0deg) rotateY(0deg);}
 	100%{-webkit-transform: rotateX(360deg) rotateY(360deg);transform: rotateX(360deg) rotateY(360deg);}
-}*/
+}
 /*Computer/laptop screen*/
-/*@media screen and (min-width: 769px){
+@media screen and (min-width: 769px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -492,7 +486,7 @@ body{
 	#typewriter{
 		color: white;
 		letter-spacing: 0.8em;
-		font-family: 'Old Standard TT', serif;
+		font-family: "Press Start 2P", cursive;
 	}
 	#content-container{
 		width: 100%;
@@ -579,7 +573,8 @@ body{
 		-o-transition: transform 1.12s, opacity 1s;
 		transition: transform 1.12s, opacity 1s;
 		transition: transform 1.12s, opacity 1s, -webkit-transform 1.12s;
-		font-family: 'EB Garamond', serif;
+		font-family: 'Changa One', cursive;
+
 	}
 	.footer-btns:hover{
 		-webkit-transform: scale(1.2,1.2);
@@ -637,11 +632,11 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		letter-spacing: 0.3em;
+		letter-spacing: 0.05em;
 	}
-}*/
+}
 /*Tablet Portrait orientation*/
-/*@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -659,7 +654,7 @@ body{
 	#typewriter{
 		color: white;
 		letter-spacing: 0.45em;
-		font-family: 'Old Standard TT', serif;
+		font-family: "Press Start 2P", cursive;
 	}
 	#content-container{
 		width: 100%;
@@ -746,7 +741,7 @@ body{
 		-o-transition: transform 1.12s, opacity 1s;
 		transition: transform 1.12s, opacity 1s;
 		transition: transform 1.12s, opacity 1s, -webkit-transform 1.12s;
-		font-family: 'EB Garamond', serif;
+		font-family: 'Changa One', cursive;
 	}
 	.footer-btns:hover{
 		-webkit-transform: scale(1.2,1.2);
@@ -779,7 +774,7 @@ body{
 		position: relative;
 		width: 16.7%;
 		height: 100%;
-		background: rgba(230,51,235,.92);
+		background: rgba(30,51,235,.92);
 	}
 	#about-btn{
 		position: relative;
@@ -804,11 +799,10 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		letter-spacing: 0.17em;
 	}
-}*/
+}
 /*Cellphone portrait orientation*/
-/*@media screen and (max-width: 480px){
+@media screen and (max-width: 480px){
 	#wrapper{
 		width: 100%;
 		height: 100%;
@@ -826,7 +820,7 @@ body{
 	#typewriter{
 		color: white;
 		letter-spacing: 0.3em;
-		font-family: 'Old Standard TT', serif;
+		font-family: "Press Start 2P", cursive;
 	}
 	#content-container{
 		width: 100%;
@@ -913,7 +907,7 @@ body{
 		-o-transition: transform 1.12s, opacity 1s;
 		transition: transform 1.12s, opacity 1s;
 		transition: transform 1.12s, opacity 1s, -webkit-transform 1.12s;
-		font-family: 'EB Garamond', serif;
+		font-family: 'Changa One', cursive;
 	}
 	.footer-btns:hover{
 		-webkit-transform: scale(1.2,1.2);
@@ -922,7 +916,7 @@ body{
 		opacity: 1.0;
 	}
 	.btn-text{
-		font-size: 0.8em;
+		font-size: 0.76em;
 	}
 	#resume-btn{
 		position: relative;
@@ -958,7 +952,7 @@ body{
 		position: relative;
 		width: 16.6%;
 		height: 100%;
-		background: rgba(200,180,255,1);
+		background: rgba(0,180,255,1);
 	}
 	span{
 		position: absolute;
@@ -971,6 +965,5 @@ body{
 	p{
 		text-align: center;
 		color: white;
-		letter-spacing: 0.3em;
 	}
-}*/
+}

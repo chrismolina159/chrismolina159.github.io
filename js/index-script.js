@@ -8,26 +8,34 @@ var str6 = "About Me";				//8
 var str7 = "Quotes";				//6
 var headerSpeed = 400;
 
+var typewriter = document.getElementById("typewriter");
+var resume = document.getElementById("res");
+var classes = document.getElementById("cla");
+var github = document.getElementById("git");
+var linkedin = document.getElementById("lin");
+var about = document.getElementById("abt");
+var quotes = document.getElementById("quo");
+
 //Possibly add margin line for extra typewriting effect
 function typeWrite(){
 
 	if(i < str3.length){
-		document.getElementById("cla").innerHTML += str3.charAt(i);
+		classes.innerHTML += str3.charAt(i);
 		if(i < 6){
-			document.getElementById("typewriter").innerHTML += str1.charAt(i);
-			document.getElementById("res").innerHTML += str2.charAt(i);
-			document.getElementById("git").innerHTML += str4.charAt(i);
-			document.getElementById("lin").innerHTML += str5.charAt(i);
-			document.getElementById("abt").innerHTML += str6.charAt(i);
-			document.getElementById("quo").innerHTML += str7.charAt(i);
+			typewriter.innerHTML += str1.charAt(i);
+			resume.innerHTML += str2.charAt(i);
+			github.innerHTML += str4.charAt(i);
+			linkedin.innerHTML += str5.charAt(i);
+			about.innerHTML += str6.charAt(i);
+			quotes.innerHTML += str7.charAt(i);
 		}
 		else if(i < 8){
-			document.getElementById("typewriter").innerHTML += str1.charAt(i);
-			document.getElementById("lin").innerHTML += str5.charAt(i);
-			document.getElementById("abt").innerHTML += str6.charAt(i);
+			typewriter.innerHTML += str1.charAt(i);
+			linkedin.innerHTML += str5.charAt(i);
+			about.innerHTML += str6.charAt(i);
 		}
 		else if(i < 9){
-			document.getElementById("typewriter").innerHTML += str1.charAt(i);
+			typewriter.innerHTML += str1.charAt(i);
 		}
 		i++;
 		setTimeout(typeWrite, headerSpeed);

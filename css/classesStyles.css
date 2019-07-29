@@ -1,43 +1,68 @@
-/*
-Change color of buttons and button text.
-Fix shading of button to turn off if button is clicked again
-Can possibly use another grid here.
-*/
-body{
+/*body{
 	background-color: rgba(165,238,237,0.41) !important;
 }
 .dropdown{
 	position: relative;
-	display: block;				/*might need to change this*/
-}
-.dropdown a:hover {
-	background-color: rgba(84,2,131,1.0);
+	display: block;
 }
 .dropbtn{
-	background-color: rgba(152,7,235,.82);	/*just the background color of the entire box change later*/
-	padding: 16px; 							/*edit as see fit*/
+	background-color: rgba(152,7,235,.82);
+	padding: 16px;
 	border: none;
 	cursor: pointer;
 	box-shadow: 3px 7px 8px 4px rgba(0,0,0,0.3);
 	color: white;
-}
-.dropbtn:hover{
-	background-color: rgba(101,10,142,1.0); /*darkens on click and remains dark until click somewhere else.  doesn't undark upon clicking again*/
+	font-family: 'Changa One', cursive;
 }
 
 .dropdown-content{
 	display: none;
 	position: relative;
 	background-color: #f1f1f1;
-	width: 100vw;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*needs webkit prefixes for other browsers adds shading around the content*/
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .dropdown-content p{
 	color: black;
 	padding: 12px 16px;
-	text-decoration: none; /*doesn't change anything that I see*/
 	display: block;
+}
+
+.show {
+	display: block;
+}*/
+
+body{
+	background-color: rgba(165,238,237,0.41) !important;
+}
+.dropdown{
+	position: relative;
+	display: block;
+}
+.dropbtn{
+	background-color: rgba(152,7,235,.82);
+	padding: 16px;
+	border: none;
+	cursor: pointer;
+	-webkit-box-shadow: 3px 7px 8px 4px rgba(0,0,0,0.3);
+	        box-shadow: 3px 7px 8px 4px rgba(0,0,0,0.3);
+	color: white;
+	font-family: 'Changa One', cursive;
+}
+
+.dropdown-content{
+	display: none;
+	position: relative;
+	background-color: #f1f1f1;
+	-webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content p{
+	color: black;
+	padding: 12px 16px;
+	display: block;
+	font-family: 'Roboto', sans-serif;
 }
 
 .show {
