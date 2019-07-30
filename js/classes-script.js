@@ -11,7 +11,8 @@ $(document).ready(function(){
 				;
 			else
 				$(this).css("background-color","rgba(152,7,235,.82)");
-		});
+		}
+	);
 	$("button").click(function(){
 		let id = this.id;
 		switch(id){

@@ -1,0 +1,14 @@
+body{
+	background-color: rgba(165,238,237,0.41) !important;
+}
+h2{
+	text-decoration: underline;
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	font-family: 'Changa One', cursive;
+	text-align: center;
+}
+p{
+	font-family: 'Roboto', sans-serif;
+}
