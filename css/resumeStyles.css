@@ -51,8 +51,8 @@ li{
 	-ms-grid-column: 1;
 }
 
-@media screen and (max-width: 480px){
+/*@media screen and (max-width: 480px){
 	li{
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
-}
+}*/
