@@ -1,18 +1,22 @@
+
+/*CSS CODE THAT NEEDS TO BE RUN THROUGH AN AUTO PREFIXER*/
 /*body{
 	background-color: rgba(165,238,237,0.41) !important;
 }
 .dropdown{
 	position: relative;
 	display: block;
+	padding-bottom: 5px;
 }
 .dropbtn{
 	background-color: rgba(152,7,235,.82);
 	padding: 16px;
 	border: none;
 	cursor: pointer;
-	box-shadow: 3px 7px 8px 4px rgba(0,0,0,0.3);
+	box-shadow: 2px 1px 8px 5px rgba(0,0,0,0.3);
 	color: white;
 	font-family: 'Changa One', cursive;
+	border-radius: 10px;
 }
 
 .dropdown-content{
@@ -30,7 +34,33 @@
 
 .show {
 	display: block;
+}
+
+#display-all-class-info{
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: rgba(152,7,235,.82);
+	cursor: pointer;
+	color: white;
+	font-family: 'Changa One', cursive;
+	border-radius: 5px;
+	transition: background-color 0.4s;
+}
+
+#body-wrapper{
+	padding: 5px 8px;
+}
+
+#wrapper{
+	padding: 0px 5px;
+}
+
+#display-all-class-info:hover{
+	background-color: rgba(101,10,142,1.0);
 }*/
+
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 body{
 	background-color: rgba(165,238,237,0.41) !important;
@@ -38,33 +68,59 @@ body{
 .dropdown{
 	position: relative;
 	display: block;
+	padding-bottom: 5px;
 }
 .dropbtn{
 	background-color: rgba(152,7,235,.82);
 	padding: 16px;
 	border: none;
 	cursor: pointer;
-	-webkit-box-shadow: 3px 7px 8px 4px rgba(0,0,0,0.3);
-	        box-shadow: 3px 7px 8px 4px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 2px 1px 8px 5px rgba(0,0,0,0.3);
+	        box-shadow: 2px 1px 8px 5px rgba(0,0,0,0.3);
 	color: white;
 	font-family: 'Changa One', cursive;
+	border-radius: 10px;
 }
 
 .dropdown-content{
 	display: none;
 	position: relative;
-	background-color: #f1f1f1;
-	-webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	/*background-color: #f1f1f1;*/
+	/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
 }
 
 .dropdown-content p{
 	color: black;
-	padding: 12px 16px;
+	/*padding: 12px 16px;*/
 	display: block;
-	font-family: 'Roboto', sans-serif;
 }
 
 .show {
 	display: block;
+}
+
+#display-all-class-info{
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: rgba(152,7,235,.82);
+	cursor: pointer;
+	color: white;
+	font-family: 'Changa One', cursive;
+	border-radius: 5px;
+	-webkit-transition: background-color 0.4s;
+	-o-transition: background-color 0.4s;
+	transition: background-color 0.4s;
+}
+
+#body-wrapper{
+	padding: 5px 8px;
+}
+
+#wrapper{
+	padding: 0px 5px;
+}
+
+#display-all-class-info:hover{
+	background-color: rgba(101,10,142,1.0);
 }
