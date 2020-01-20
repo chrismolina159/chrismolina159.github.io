@@ -22,7 +22,7 @@ function typeWrite(){
 	if(i < str3.length){
 		classes.innerHTML += str3.charAt(i);
 		if(i < 6){
-			// typewriter.innerHTML += str1.charAt(i);
+			typewriter.innerHTML += str1.charAt(i);
 			resume.innerHTML += str2.charAt(i);
 			github.innerHTML += str4.charAt(i);
 			linkedin.innerHTML += str5.charAt(i);
@@ -30,12 +30,12 @@ function typeWrite(){
 			quotes.innerHTML += str7.charAt(i);
 		}
 		else if(i < 8){
-			// typewriter.innerHTML += str1.charAt(i);
+			typewriter.innerHTML += str1.charAt(i);
 			linkedin.innerHTML += str5.charAt(i);
 			about.innerHTML += str6.charAt(i);
 		}
 		else if(i < 9){
-			// typewriter.innerHTML += str1.charAt(i);
+			typewriter.innerHTML += str1.charAt(i);
 		}
 		i++;
 		setTimeout(typeWrite, headerSpeed);
@@ -43,7 +43,7 @@ function typeWrite(){
 }
 
 $(document).ready(function(){
-	typewriter.innerHTML = "Site under construction"
+	// typewriter.innerHTML = "Site under construction"
 	typeWrite();
 
 	// $("#resume-btn").click(function(){

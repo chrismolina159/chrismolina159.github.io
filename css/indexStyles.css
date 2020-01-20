@@ -1,10 +1,9 @@
 /*
-ADD PHONE LANDSCAPE ORIENTATION MEDIA QUERY to all
-ADD TABLET LANDSCAPE ORIENTATION MEDIA QUERY to all
 Italicize or do something to the work exp section in resume page
 fix size of quotes box for mobile and make larger for computer
 */
 
+/*WORKING CODE DON'T DELETE THIS ASPECT*/
 /*body{
 	margin: 0;
 	height: 100vh;
@@ -17,12 +16,13 @@ fix size of quotes box for mobile and make larger for computer
 }
 
 #wrapper{
-		width: 100%;
-		height: 100%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 #header-container{
 	width: 100%;
-	height: 11%;
+	height: 15%;
 	background: rgba(165, 238, 190, 1);
 	position: relative;
 	display: flex;
@@ -31,25 +31,31 @@ fix size of quotes box for mobile and make larger for computer
 #header-content{
 	position: relative;
 	height: 100%;
-	display: table;
+	display: flex;
+	align-items: center;
 }
 #typewriter{
-	font-size: 2.5em;
 	color: white;
-	letter-spacing: 0.8em;
 	font-family: "Press Start 2P", cursive;
 	text-align: center;
 	margin: 0;
-	display: table-cell;
-	vertical-align: middle;
+}
+
+
+#content-container{
+	width: 100%;
+	height: 70%;
+	position: relative;
+	background: rgba(165,238,237,0.41);
 }
 #cube-container{
-	width: 200px;
-	height: 200px;
+	width: 30vh;
+	height: 30vh;
 	perspective: 600px;
 	margin: 0 auto;
 	position: relative;
-	top: 150px;
+	top: 50%;
+	transform: translateY(-50%);
 }
 #cube{
 	width: 100%;
@@ -61,45 +67,99 @@ fix size of quotes box for mobile and make larger for computer
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
+.face{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	border: 1px solid black;
+}
 .face:nth-child(1){
 	background: rgba(255,0,0,0.5);
-	transform: rotateY(0deg) translateZ(100px);
+	transform: rotateY(0deg) translateZ(15vh);
 }
 .face:nth-child(2){
 	background: rgba(0,0,255,0.5);
-	transform: rotateY(90deg) translateZ(100px);
+	transform: rotateY(90deg) translateZ(15vh);
 }
 .face:nth-child(3){
 	background: rgba(0,255,0,0.5);
-	transform: rotateY(180deg) translateZ(100px);
+	transform: rotateY(180deg) translateZ(15vh);
 }
 .face:nth-child(4){
 	background: rgba(0,255,255,0.5);
-	transform: rotateY(-90deg) translateZ(100px);
+	transform: rotateY(-90deg) translateZ(15vh);
 }
 .face:nth-child(5){
 	background: rgba(255,255,0,0.5);
-	transform: rotateX(90deg) translateZ(100px);
+	transform: rotateX(90deg) translateZ(15vh);
 }
 .face:nth-child(6){
 	background: rgba(255,0,255,0.5);
-	transform: rotateX(-90deg) translateZ(100px);
+	transform: rotateX(-90deg) translateZ(15vh);
 }
-.btn-text{
-	font-size: 1.44em;
-	margin: 0;
-	display: table-cell;
-	vertical-align: middle;
+
+
+#footer-container{
+	width: 100%;
+	height: 15%;
+}
+#footer-content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
 }
 .footer-btns{
 	opacity: 0.75;
 	transition: transform 1.12s, opacity 1s;
 	font-family: 'Changa One', cursive;
-	display: table;
 }
 .footer-btns:hover{
 	transform: scale(1.2,1.2);
 	opacity: 1.0;
+}
+.btn-text{
+	margin: 0;
+	vertical-align: middle;
+}
+#resume-btn{
+	position: relative;
+	width: 16.6%;
+	height: 100%;
+	background: rgba(255,13,251,1);
+}
+#classes-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: rgba(152,7,235,.92);
+}
+#github-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: rgba(69,0,255,1);
+}
+#linkedin-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: rgba(30,51,235,.92);
+}
+#about-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: rgba(23,130,255,1);
+}
+#quotes-btn{
+	position: relative;
+	width: 16.6%;
+	height: 100%;
+	background: rgba(0,180,255,1);
 }
 span{
 	position: absolute;
@@ -112,230 +172,75 @@ span{
 p{
 	text-align: center;
 	color: white;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }*/
+
 /*Computer/laptop screen*/
 /*@media screen and (min-width: 769px){
-	#content-container{
-		width: 100%;
-		height: 69%;
-		position: relative;
-		left: 0px;
-		background: rgba(165,238,237,0.41);
-	}
-	.face{
-		position: absolute;
-		width: 200px;
-		height: 200px;
-		opacity: 0.7;
-		border: 1px solid black;
-	}
-	#footer-container{
-		width: 100%;
-		height: 20%;
-		display: flex;
-		position: relative;
-		bottom: 0px;
-		overflow: hidden;
-	}
-	#resume-btn{
-		position: relative;
-		width: 16.6%;
-		height: 100%;
-		background: rgba(255,13,251,1);
-	}
-	#classes-btn{
-		position: relative;
-		width: 16.7%;
-		height: 100%;
-		background: rgba(152,7,235,.92);
-	}
-	#github-btn{
-		position: relative;
-		width: 16.7%;
-		height: 100%;
-		background: rgba(69,0,255,1);
-	}
-	#linkedin-btn{
-		position: relative;
-		width: 16.7%;
-		height: 100%;
-		background: rgba(30,51,235,.92);
-	}
-	#about-btn{
-		position: relative;
-		width: 16.7%;
-		height: 100%;
-		background: rgba(23,130,255,1);
-	}
-	#quotes-btn{
-		position: relative;
-		width: 16.6%;
-		height: 100%;
-		background: rgba(0,180,255,1);
-	}
 }*/
+
 /*Tablet Portrait orientation*/
 /*@media screen and (min-width: 481px) and (max-width: 768px){
-	#header-container{
-		height: 13%
-	}
-	#typewriter{
-		letter-spacing: 0.40em;
-	}
-	#content-container{
-		width: 100%;
-		height: 67%;
-		position: relative;
-		left: 0px;
-		background: rgba(165,238,237,0.41);
-	}
-	.face{
-		position: absolute;
-		width: 200px;
-		height: 200px;
-		opacity: 0.7;
-		border: 1px solid black;
-	}
-	#footer-container{
-		width: 100%;
-		height: 20%;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		position: relative;
-		bottom: 0px;
-		overflow: hidden;
-	}
 	#resume-btn{
-		position: relative;
 		width: 33.33%;
 		height: 50%;
-		background: rgba(255,13,251,1);
 	}
 	#classes-btn{
-		position: relative;
 		width: 33.34%;
 		height: 50%;
-		background: rgba(152,7,235,.92);
 	}
 	#github-btn{
-		position: relative;
 		width: 33.33%;
 		height: 50%;
-		background: rgba(69,0,255,1);
 	}
 	#linkedin-btn{
-		position: relative;
 		width: 33.33%;
 		height: 50%;
-		background: rgba(30,51,235,.92);
 	}
 	#about-btn{
-		position: relative;
 		width: 33.34%;
 		height: 50%;
-		background: rgba(23,130,255,1);
 	}
 	#quotes-btn{
-		position: relative;
 		width: 33.33%;
 		height: 50%;
-		background: rgba(0,180,255,1);
 	}
 }*/
+
 /*Cellphone portrait orientation*/
 /*@media screen and (max-width: 480px){
-	#header-container{
-		height: 13%
-	}
-	#typewriter{
-		letter-spacing: 0.05em;
-	}
-	#content-container{
-		width: 100%;
-		height: 67%;
-		position: relative;
-		left: 0px;
-		background: rgba(165,238,237,0.41);
-	}
-	#cube-container{
-		width: 150px;
-		height: 150px;
-	}
-	.face{
-		position: absolute;
-		width: 150px;
-		height: 150px;
-		opacity: 0.7;
-		border: 1px solid black;
-	}
-	.face:nth-child(1){
-		transform: rotateY(0deg) translateZ(75px);
-	}
-	.face:nth-child(2){
-		transform: rotateY(90deg) translateZ(75px);
-	}
-	.face:nth-child(3){
-		transform: rotateY(180deg) translateZ(75px);
-	}
-	.face:nth-child(4){
-		transform: rotateY(-90deg) translateZ(75px);
-	}
-	.face:nth-child(5){
-		transform: rotateX(90deg) translateZ(75px);
-	}
-	.face:nth-child(6){
-		transform: rotateX(-90deg) translateZ(75px);
-	}
-	#footer-container{
-		width: 100%;
-		height: 20%;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		position: relative;
-		bottom: 0px;
-		overflow: hidden;
-	}
 	#resume-btn{
-		position: relative;
 		width: 50%;
 		height: 33.33%;
-		background: rgba(255,13,251,1);
 	}
 	#classes-btn{
-		position: relative;
 		width: 50%;
 		height: 33.34%;
-		background: rgba(152,7,235,.92);
 	}
 	#github-btn{
-		position: relative;
 		width: 50%;
 		height: 33.33%;
-		background: rgba(69,0,255,1);
 	}
 	#linkedin-btn{
-		position: relative;
 		width: 50%;
 		height: 33.34%;
-		background: rgba(30,51,235,.92);
 	}
 	#about-btn{
-		position: relative;
 		width: 50%;
 		height: 33.33%;
-		background: rgba(23,130,255,1);
 	}
 	#quotes-btn{
-		position: relative;
 		width: 50%;
 		height: 33.34%;
-		background: rgba(0,180,255,1);
 	}
 }*/
 
 
+
+/*	THIS IS AFTER PUTTING THE CODE IN AN AUTOPREFIXER
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 body{
 	margin: 0;
@@ -353,12 +258,13 @@ body{
 }
 
 #wrapper{
-		width: 100%;
-		height: 100%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 #header-container{
 	width: 100%;
-	height: 11%;
+	height: 15%;
 	background: rgba(165, 238, 190, 1);
 	position: relative;
 	display: -webkit-box;
@@ -371,26 +277,38 @@ body{
 #header-content{
 	position: relative;
 	height: 100%;
-	display: table;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 #typewriter{
-	font-size: 2.5em;
 	color: white;
-	letter-spacing: 0.8em;
 	font-family: "Press Start 2P", cursive;
 	text-align: center;
 	margin: 0;
-	display: table-cell;
-	vertical-align: middle;
+}
+
+
+#content-container{
+	width: 100%;
+	height: 70%;
+	position: relative;
+	background: rgba(165,238,237,0.41);
 }
 #cube-container{
-	width: 200px;
-	height: 200px;
+	width: 30vh;
+	height: 30vh;
 	-webkit-perspective: 600px;
 	        perspective: 600px;
 	margin: 0 auto;
 	position: relative;
-	top: 150px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 #cube{
 	width: 100%;
@@ -407,41 +325,62 @@ body{
 	-webkit-animation-iteration-count: infinite;
 	        animation-iteration-count: infinite;
 }
+.face{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	border: 1px solid black;
+}
 .face:nth-child(1){
 	background: rgba(255,0,0,0.5);
-	-webkit-transform: rotateY(0deg) translateZ(100px);
-	        transform: rotateY(0deg) translateZ(100px);
+	-webkit-transform: rotateY(0deg) translateZ(15vh);
+	        transform: rotateY(0deg) translateZ(15vh);
 }
 .face:nth-child(2){
 	background: rgba(0,0,255,0.5);
-	-webkit-transform: rotateY(90deg) translateZ(100px);
-	        transform: rotateY(90deg) translateZ(100px);
+	-webkit-transform: rotateY(90deg) translateZ(15vh);
+	        transform: rotateY(90deg) translateZ(15vh);
 }
 .face:nth-child(3){
 	background: rgba(0,255,0,0.5);
-	-webkit-transform: rotateY(180deg) translateZ(100px);
-	        transform: rotateY(180deg) translateZ(100px);
+	-webkit-transform: rotateY(180deg) translateZ(15vh);
+	        transform: rotateY(180deg) translateZ(15vh);
 }
 .face:nth-child(4){
 	background: rgba(0,255,255,0.5);
-	-webkit-transform: rotateY(-90deg) translateZ(100px);
-	        transform: rotateY(-90deg) translateZ(100px);
+	-webkit-transform: rotateY(-90deg) translateZ(15vh);
+	        transform: rotateY(-90deg) translateZ(15vh);
 }
 .face:nth-child(5){
 	background: rgba(255,255,0,0.5);
-	-webkit-transform: rotateX(90deg) translateZ(100px);
-	        transform: rotateX(90deg) translateZ(100px);
+	-webkit-transform: rotateX(90deg) translateZ(15vh);
+	        transform: rotateX(90deg) translateZ(15vh);
 }
 .face:nth-child(6){
 	background: rgba(255,0,255,0.5);
-	-webkit-transform: rotateX(-90deg) translateZ(100px);
-	        transform: rotateX(-90deg) translateZ(100px);
+	-webkit-transform: rotateX(-90deg) translateZ(15vh);
+	        transform: rotateX(-90deg) translateZ(15vh);
 }
-.btn-text{
-	font-size: 1.44em;
-	margin: 0;
-	display: table-cell;
-	vertical-align: middle;
+
+
+#footer-container{
+	width: 100%;
+	height: 15%;
+}
+#footer-content{
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	position: relative;
 }
 .footer-btns{
 	opacity: 0.75;
@@ -451,13 +390,52 @@ body{
 	transition: transform 1.12s, opacity 1s;
 	transition: transform 1.12s, opacity 1s, -webkit-transform 1.12s;
 	font-family: 'Changa One', cursive;
-	display: table;
 }
 .footer-btns:hover{
 	-webkit-transform: scale(1.2,1.2);
 	    -ms-transform: scale(1.2,1.2);
 	        transform: scale(1.2,1.2);
 	opacity: 1.0;
+}
+.btn-text{
+	margin: 0;
+	vertical-align: middle;
+}
+#resume-btn{
+	position: relative;
+	width: 16.6%;
+	height: 100%;
+	background: rgba(255,13,251,1);
+}
+#classes-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: rgba(152,7,235,.92);
+}
+#github-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: rgba(69,0,255,1);
+}
+#linkedin-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: rgba(30,51,235,.92);
+}
+#about-btn{
+	position: relative;
+	width: 16.7%;
+	height: 100%;
+	background: rgba(23,130,255,1);
+}
+#quotes-btn{
+	position: relative;
+	width: 16.6%;
+	height: 100%;
+	background: rgba(0,180,255,1);
 }
 span{
 	position: absolute;
@@ -470,245 +448,69 @@ span{
 p{
 	text-align: center;
 	color: white;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
+
 /*Computer/laptop screen*/
 @media screen and (min-width: 769px){
-	#content-container{
-		width: 100%;
-		height: 69%;
-		position: relative;
-		left: 0px;
-		background: rgba(165,238,237,0.41);
-	}
-	.face{
-		position: absolute;
-		width: 200px;
-		height: 200px;
-		opacity: 0.7;
-		border: 1px solid black;
-	}
-	#footer-container{
-		width: 100%;
-		height: 20%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		position: relative;
-		bottom: 0px;
-		overflow: hidden;
-	}
-	#resume-btn{
-		position: relative;
-		width: 16.6%;
-		height: 100%;
-		background: rgba(255,13,251,1);
-	}
-	#classes-btn{
-		position: relative;
-		width: 16.7%;
-		height: 100%;
-		background: rgba(152,7,235,.92);
-	}
-	#github-btn{
-		position: relative;
-		width: 16.7%;
-		height: 100%;
-		background: rgba(69,0,255,1);
-	}
-	#linkedin-btn{
-		position: relative;
-		width: 16.7%;
-		height: 100%;
-		background: rgba(30,51,235,.92);
-	}
-	#about-btn{
-		position: relative;
-		width: 16.7%;
-		height: 100%;
-		background: rgba(23,130,255,1);
-	}
-	#quotes-btn{
-		position: relative;
-		width: 16.6%;
-		height: 100%;
-		background: rgba(0,180,255,1);
-	}
 }
+
 /*Tablet Portrait orientation*/
 @media screen and (min-width: 481px) and (max-width: 768px){
-	#header-container{
-		height: 13%
-	}
-	#typewriter{
-		letter-spacing: 0.40em;
-	}
-	#content-container{
-		width: 100%;
-		height: 67%;
-		position: relative;
-		left: 0px;
-		background: rgba(165,238,237,0.41);
-	}
-	.face{
-		position: absolute;
-		width: 200px;
-		height: 200px;
-		opacity: 0.7;
-		border: 1px solid black;
-	}
-	#footer-container{
-		width: 100%;
-		height: 20%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
-		position: relative;
-		bottom: 0px;
-		overflow: hidden;
-	}
 	#resume-btn{
-		position: relative;
 		width: 33.33%;
 		height: 50%;
-		background: rgba(255,13,251,1);
 	}
 	#classes-btn{
-		position: relative;
 		width: 33.34%;
 		height: 50%;
-		background: rgba(152,7,235,.92);
 	}
 	#github-btn{
-		position: relative;
 		width: 33.33%;
 		height: 50%;
-		background: rgba(69,0,255,1);
 	}
 	#linkedin-btn{
-		position: relative;
 		width: 33.33%;
 		height: 50%;
-		background: rgba(30,51,235,.92);
 	}
 	#about-btn{
-		position: relative;
 		width: 33.34%;
 		height: 50%;
-		background: rgba(23,130,255,1);
 	}
 	#quotes-btn{
-		position: relative;
 		width: 33.33%;
 		height: 50%;
-		background: rgba(0,180,255,1);
 	}
 }
+
 /*Cellphone portrait orientation*/
 @media screen and (max-width: 480px){
-	#header-container{
-		height: 13%
-	}
-	#typewriter{
-		letter-spacing: 0.05em;
-	}
-	#content-container{
-		width: 100%;
-		height: 67%;
-		position: relative;
-		left: 0px;
-		background: rgba(165,238,237,0.41);
-	}
-	#cube-container{
-		width: 150px;
-		height: 150px;
-	}
-	.face{
-		position: absolute;
-		width: 150px;
-		height: 150px;
-		opacity: 0.7;
-		border: 1px solid black;
-	}
-	.face:nth-child(1){
-		-webkit-transform: rotateY(0deg) translateZ(75px);
-		        transform: rotateY(0deg) translateZ(75px);
-	}
-	.face:nth-child(2){
-		-webkit-transform: rotateY(90deg) translateZ(75px);
-		        transform: rotateY(90deg) translateZ(75px);
-	}
-	.face:nth-child(3){
-		-webkit-transform: rotateY(180deg) translateZ(75px);
-		        transform: rotateY(180deg) translateZ(75px);
-	}
-	.face:nth-child(4){
-		-webkit-transform: rotateY(-90deg) translateZ(75px);
-		        transform: rotateY(-90deg) translateZ(75px);
-	}
-	.face:nth-child(5){
-		-webkit-transform: rotateX(90deg) translateZ(75px);
-		        transform: rotateX(90deg) translateZ(75px);
-	}
-	.face:nth-child(6){
-		-webkit-transform: rotateX(-90deg) translateZ(75px);
-		        transform: rotateX(-90deg) translateZ(75px);
-	}
-	#footer-container{
-		width: 100%;
-		height: 20%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
-		position: relative;
-		bottom: 0px;
-		overflow: hidden;
-	}
 	#resume-btn{
-		position: relative;
 		width: 50%;
 		height: 33.33%;
-		background: rgba(255,13,251,1);
 	}
 	#classes-btn{
-		position: relative;
 		width: 50%;
 		height: 33.34%;
-		background: rgba(152,7,235,.92);
 	}
 	#github-btn{
-		position: relative;
 		width: 50%;
 		height: 33.33%;
-		background: rgba(69,0,255,1);
 	}
 	#linkedin-btn{
-		position: relative;
 		width: 50%;
 		height: 33.34%;
-		background: rgba(30,51,235,.92);
 	}
 	#about-btn{
-		position: relative;
 		width: 50%;
 		height: 33.33%;
-		background: rgba(23,130,255,1);
 	}
 	#quotes-btn{
-		position: relative;
 		width: 50%;
 		height: 33.34%;
-		background: rgba(0,180,255,1);
 	}
 }
