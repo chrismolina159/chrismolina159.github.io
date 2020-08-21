@@ -1,11 +1,9 @@
-body{
+/*body{
 	background-color: rgba(165,238,237,0.41) !important;
 	height: 100vh;
-	/*margin: 0;*/
 }
 #body-wrapper{
 	box-sizing: border-box;
-	/*padding: 5px 8px 0px 8px;*/
 	padding: 5px 0px 0px 0px;
 	position: relative;
 	height: 100%;
@@ -16,7 +14,6 @@ body{
 }
 #class-details-container{
 	box-sizing: border-box;
-	/*padding: 0px 5px;*/
 }
 #display-all-class-info{
 	display: block;
@@ -93,7 +90,7 @@ footer{
 }
 #home-link:hover{
 	color: rgba(210,210,210,1.0);
-}
+}*/
 
 
 /*
@@ -103,16 +100,25 @@ footer{
 * Browsers: last 4 version
 */
 
-/*body{
+body{
 	background-color: rgba(165,238,237,0.41) !important;
+	height: 100vh;
 }
 #body-wrapper{
-	padding: 5px 8px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 5px 0px 0px 0px;
 	position: relative;
+	height: 100%;
 }
-
-#wrapper{
-	padding: 0px 5px;
+#all-class-info-container{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0px 8px;
+}
+#class-details-container{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 #display-all-class-info{
 	display: block;
@@ -163,7 +169,9 @@ footer{
 
 footer{
 	width: 100%;
-	position: relative;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	border: 1px solid black;
@@ -198,4 +206,4 @@ footer{
 }
 #home-link:hover{
 	color: rgba(210,210,210,1.0);
-}*/
+}
