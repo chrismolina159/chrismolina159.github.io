@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Triforce';
+    src: url('triforce-y07d-webfont.woff2') format('woff2'),
+         url('triforce-y07d-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

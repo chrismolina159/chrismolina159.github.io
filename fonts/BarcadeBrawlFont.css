@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Barcade Brawl Regular';
+    src: url('barcadebrawlregular-plyd-webfont.woff2') format('woff2'),
+         url('barcadebrawlregular-plyd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
