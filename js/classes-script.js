@@ -71,7 +71,79 @@ $(document).ready(function(){
 			if(numShowing < 12){
 				displayAll();
 			}
-		}, 500);
+		}, 300);
+	}
+
+	function hideAll(){
+		setTimeout(function(){
+			if($("#webdesign-content").hasClass("show")){
+				document.getElementById("webdesign-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("webdesign-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#discrete-content").hasClass("show")){
+				document.getElementById("discrete-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("discrete-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#datastructs-content").hasClass("show")){
+				document.getElementById("datastructs-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("datastructs-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#cso-content").hasClass("show")){
+				document.getElementById("cso-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("cso-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#os-content").hasClass("show")){
+				document.getElementById("os-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("os-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#algos-content").hasClass("show")){
+				document.getElementById("algos-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("algos-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#linear-content").hasClass("show")){
+				document.getElementById("linear-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("linear-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#interactive-content").hasClass("show")){
+				document.getElementById("interactive-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("interactive-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#parallel-content").hasClass("show")){
+				document.getElementById("parallel-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("parallel-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#artificial-content").hasClass("show")){
+				document.getElementById("artificial-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("artificial-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#networks-content").hasClass("show")){
+				document.getElementById("networks-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("networks-content").classList.toggle("show");
+				numShowing--;
+			}
+			else if($("#devops-content").hasClass("show")){
+				document.getElementById("devops-btn").style.backgroundColor = "rgba(152, 7, 235, 0.82)";
+				document.getElementById("devops-content").classList.toggle("show");
+				numShowing--;
+			}
+			else{
+				//this gets hit when the user clicks the button and everything is not showing
+				;
+			}
+			if(numShowing > 0){
+				hideAll();
+			}
+		}, 300);
 	}
 
 	$(".dropbtn").hover(
@@ -219,7 +291,10 @@ $(document).ready(function(){
 				break;
 		}
 	});
-	$("#display-all-class-info").click(function(){
+	$("#display-all-btn").click(function(){
 		displayAll();
+	});
+	$("#hide-all-btn").click(function(){
+		hideAll();
 	});
 });
