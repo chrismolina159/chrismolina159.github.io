@@ -4,35 +4,40 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Quotes</title>
-	<link href="https://fonts.googleapis.com/css?family=Changa+One|EB+Garamond&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./fonts/LittleMissLoudFont.css">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+	
 	<link rel="stylesheet" href="css/quotesStyles.css">
 	<link rel="stylesheet" href="fontawesome-5.14.0/css/all.min.css">
 </head>
 <body>
 	<div id="body-wrapper">
-		<div id="wrapper">
-			<div id="button-container">
-				<div id="random-btn">
-					<p id="random-btn-text">Random Quote</p>
+		<div id="quote-all-container">
+			<div id="quote-wrapper">
+				<div id="button-container">
+					<div id="random-btn">
+						<p id="random-btn-text">Random Quote</p>
+					</div>
 				</div>
-			</div>
-			<div id="content-container">
-				<div id="quote-container">
-					<p id="quote-text"></p>
-					<p id="quote-author"></p>
+				<div id="content-container">
+					<div id="quote-container">
+						<p id="quote-text"></p>
+						<p id="quote-author"></p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<footer>
+			<div id="dialogue-container">
+				<a id="home-link" href="./index.html">
+					<span id="home-page-icon-wrapper">
+						<i class="fas fa-home"></i>
+					</span>Go Home
+				</a>
+			</div>
+		</footer>
 	</div>
-	<footer>
-		<div id="dialogue-container">
-			<a id="home-link" href="./index.html">
-				<span id="home-page-icon-wrapper">
-					<i class="fas fa-home"></i>
-				</span>Go Home
-			</a>
-		</div>
-	</footer>
 
 	<script src="js/jquery-compressed.js"></script>
 	<script src="js/quotes-script.js"></script>

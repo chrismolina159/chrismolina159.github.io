@@ -6,6 +6,12 @@
 	<title>Classes Taken</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Changa+One|Roboto:300,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./fonts/AtlantisInternationalFont.css">
+	<link rel="stylesheet" href="./fonts/BarcadeBrawlFont.css">
+	<link rel="stylesheet" href="./fonts/FerrumFont.css">
+	<link rel="stylesheet" href="./fonts/LittleMissLoudFont.css">
+	<link rel="stylesheet" href="./fonts/TriforceFont.css">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/classesStyles.css">
 	<link rel="stylesheet" href="fontawesome-5.14.0/css/all.min.css">
@@ -13,9 +19,15 @@
 <body>
 	<div id="body-wrapper">
 		<div id="all-class-info-container">
-			<div id="display-all">
-				<button id="display-all-class-info">This page is currently under construction</button>
-			</div> <br>
+			<div id="display-hide-btn-container">
+				<div id="display-all-btn-wrapper">
+					<button id="display-all-btn">Display All Class Details</button>
+				</div> 
+				<div id="hide-all-btn-wrapper">
+					<button id="hide-all-btn">Hide All Class Details</button>
+				</div>
+			</div>
+			<br>
 			
 			<div id="class-details-container" class="container-fluid">
 				<div class="row">
@@ -123,7 +135,18 @@
 				<!-- end of second row -->
 			</div>
 		</div>
-		<footer>
+		<div style="position: relative;">
+			<footer>
+				<div id="dialogue-container">
+					<a id="home-link" href="./index.html">
+						<span id="home-page-icon-wrapper">
+							<i class="fas fa-home"></i>
+						</span>Go Home
+					</a>
+				</div>
+			</footer>
+		</div>
+		<!--<footer>
 			<div id="dialogue-container">
 				<a id="home-link" href="./index.html">
 					<span id="home-page-icon-wrapper">
@@ -131,7 +154,7 @@
 					</span>Go Home
 				</a>
 			</div>
-		</footer>
+		</footer>-->
 	</div>
 	<!-- end of body wrapper -->
 
