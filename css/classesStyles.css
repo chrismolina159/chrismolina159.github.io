@@ -1,5 +1,6 @@
-/*body{
-	background-color: rgba(165,238,237,0.41) !important;
+body{
+	/*background-color: rgba(165,238,237,0.41) !important;*/
+	background-color: rgba(218, 248, 247, 1.0) !important;
 	height: 100vh;
 }
 #body-wrapper{
@@ -7,27 +8,63 @@
 	padding: 5px 0px 0px 0px;
 	position: relative;
 	height: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto 5.25rem;
 }
 #all-class-info-container{
 	box-sizing: border-box;
 	padding: 0px 8px;
 }
-#class-details-container{
-	box-sizing: border-box;
+/*Start of style for the two header buttons*/
+#display-hide-btn-container{
+	display: flex;
+	justify-content: center;
+	height: 2.2em;
 }
-#display-all-class-info{
-	display: block;
-	width: 100%;
-	border: none;
-	background-color: rgba(152,7,235,.82);
+#display-all-btn-wrapper{
+	height: 100%;
+}
+#display-all-btn{
+	height: 100%;
+	margin-right: 2px;
+	border: 1px solid black;
+	background-color: rgba(218, 248, 247, 1.0);
 	cursor: pointer;
-	color: white;
-	font-family: 'Changa One', cursive;
+	color: rgba(160, 160, 160,1.0);
+	/*font-family: 'Changa One', cursive;*/
+	font-family: 'Little Miss Loudonbold';
+	font-size: 1.2rem;
 	border-radius: 5px;
 	transition: background-color 0.4s;
 }
-#display-all-class-info:hover{
-	background-color: rgba(101,10,142,1.0);
+#display-all-btn:hover{
+	background-color: rgba(152,7,235,.82);
+	color: white;
+}
+#hide-all-btn-wrapper{
+	height: 100%;
+}
+#hide-all-btn{
+	height: 100%;
+	margin-left: 2px;
+	border: 1px solid black;
+	background-color: rgba(218, 248, 247, 1.0);
+	cursor: pointer;
+	color: rgba(160, 160, 160,1.0);
+	/*font-family: 'Changa One', cursive;*/
+	font-family: 'Little Miss Loudonbold';
+	font-size: 1.2rem;
+	border-radius: 5px;
+	transition: background-color 0.4s;
+}
+#hide-all-btn:hover{
+	background-color: rgba(152,7,235,.82);
+	color: white;
+}
+/*Start of style for the class details*/
+#class-details-container{
+	box-sizing: border-box;
 }
 .dropdown{
 	position: relative;
@@ -36,13 +73,24 @@
 }
 .dropbtn{
 	background-color: rgba(152,7,235,.82);
-	padding: 16px;
+	width: 160px;
+	height: 70px;
+	padding: 10px;
 	border: none;
 	cursor: pointer;
 	box-shadow: 2px 1px 8px 5px rgba(0,0,0,0.3);
 	color: white;
-	font-family: 'Changa One', cursive;
+	/*font-family: 'Changa One', cursive;*/
+	/*font-family: 'Atlantis International Regular';*/
+	/*font-family: 'Barcade Brawl Regular';*/
+	/*font-family: 'Ferrumextra Condensed';*/
+	font-family: 'Little Miss Loudonbold';
+	/*font-family: 'Triforce';*/
+	letter-spacing: 1px;
 	border-radius: 10px;
+	line-height: 85%;
+	margin-bottom: 9px;
+	font-size: 1.1rem;
 }
 
 .dropdown-content{
@@ -53,6 +101,8 @@
 .dropdown-content p{
 	color: black;
 	display: block;
+	font-family: 'Space Mono', monospace;
+	font-size: 0.8rem;
 }
 
 .show {
@@ -61,18 +111,19 @@
 
 footer{
 	width: 100%;
-	position: absolute;
+	position: relative;
+	/*position: absolute;
 	bottom: 0;
-	left: 0;
+	left: 0;*/
 	box-sizing: border-box;
 	border: 1px solid black;
-	height: 3.5em;
+	height: 5.25rem;
 	background-color: rgba(35,35,35,1.0);
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 #dialogue-container{
 	color:white;
-	width: 7em;
+	width: 10.5rem;
 	box-sizing: border-box;
 	position: absolute;
 	left: 50%;
@@ -83,14 +134,26 @@ footer{
 	padding: 10px;
 	display: flex;
 	justify-content: center;
+	/*font-family: 'Changa One', cursive;*/
+	/*font-family: 'Atlantis International Regular';*/
+	/*font-family: 'Barcade Brawl Regular';*/
+	/*font-family: 'Ferrumextra Condensed';*/
+	font-family: 'Little Miss Loudonbold';
+	/*font-family: 'Triforce';*/
 }
 #home-link{
 	color: inherit;
 	text-decoration: none;
+	/*font-family: 'Changa One', cursive;*/
+	/*font-family: 'Atlantis International Regular';*/
+	/*font-family: 'Barcade Brawl Regular';*/
+	/*font-family: 'Ferrumextra Condensed';*/
+	/*font-family: 'Little Miss Loudonbold';*/
+	/*font-family: 'Triforce';*/
 }
 #home-link:hover{
 	color: rgba(210,210,210,1.0);
-}*/
+}
 
 
 /*
@@ -100,7 +163,7 @@ footer{
 * Browsers: last 4 version
 */
 
-body{
+/*body{
 	background-color: rgba(165,238,237,0.41) !important;
 	height: 100vh;
 }
@@ -206,4 +269,4 @@ footer{
 }
 #home-link:hover{
 	color: rgba(210,210,210,1.0);
-}
+}*/

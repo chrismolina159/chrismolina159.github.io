@@ -1,8 +1,3 @@
-/*
-Italicize or do something to the work exp section in resume page
-fix size of quotes box for mobile and make larger for computer
-*/
-
 /*WORKING CODE DON'T DELETE THIS ASPECT*/
 /*body{
 	margin: 0;
@@ -115,7 +110,8 @@ fix size of quotes box for mobile and make larger for computer
 .footer-btns{
 	opacity: 0.75;
 	transition: transform 1.12s, opacity 1s;
-	font-family: 'Changa One', cursive;
+	font-family: 'Little Miss Loudonbold';
+	font-size: 1.1rem;
 }
 .footer-btns:hover{
 	transform: scale(1.2,1.2);
@@ -169,20 +165,15 @@ span{
 	height: 100%;
 	z-index: 1;
 }
-p{
+h3{
 	text-align: center;
 	color: white;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-}*/
+}
 
-/*Computer/laptop screen*/
-/*@media screen and (min-width: 769px){
-}*/
-
-/*Tablet Portrait orientation*/
-/*@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 481px) and (max-width: 768px){
 	#resume-btn{
 		width: 33.33%;
 		height: 50%;
@@ -207,10 +198,9 @@ p{
 		width: 33.33%;
 		height: 50%;
 	}
-}*/
+}
 
-/*Cellphone portrait orientation*/
-/*@media screen and (max-width: 480px){
+@media screen and (max-width: 480px){
 	#resume-btn{
 		width: 50%;
 		height: 33.33%;
@@ -239,8 +229,12 @@ p{
 
 
 
-/*	THIS IS AFTER PUTTING THE CODE IN AN AUTOPREFIXER
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 body{
 	margin: 0;
@@ -389,7 +383,8 @@ body{
 	-o-transition: transform 1.12s, opacity 1s;
 	transition: transform 1.12s, opacity 1s;
 	transition: transform 1.12s, opacity 1s, -webkit-transform 1.12s;
-	font-family: 'Changa One', cursive;
+	font-family: 'Little Miss Loudonbold';
+	font-size: 1.1rem;
 }
 .footer-btns:hover{
 	-webkit-transform: scale(1.2,1.2);
@@ -445,7 +440,7 @@ span{
 	height: 100%;
 	z-index: 1;
 }
-p{
+h3{
 	text-align: center;
 	color: white;
 	position: relative;
@@ -455,11 +450,6 @@ p{
 	        transform: translateY(-50%);
 }
 
-/*Computer/laptop screen*/
-@media screen and (min-width: 769px){
-}
-
-/*Tablet Portrait orientation*/
 @media screen and (min-width: 481px) and (max-width: 768px){
 	#resume-btn{
 		width: 33.33%;
@@ -487,7 +477,6 @@ p{
 	}
 }
 
-/*Cellphone portrait orientation*/
 @media screen and (max-width: 480px){
 	#resume-btn{
 		width: 50%;

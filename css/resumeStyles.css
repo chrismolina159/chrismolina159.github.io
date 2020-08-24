@@ -2,12 +2,13 @@
 	background-color: rgba(165,238,237,0.41) !important;
 	margin: 0px;
 }
-h2{
-	border-bottom: 1px solid black !important;
-	font-family: 'Changa One', cursive;
+h3{
+	border-bottom: 2px solid black !important;
+	font-family: 'Barcade Brawl Regular';
+	padding-bottom: 1px;
 }
 li{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Space Mono', monospace;
 }
 #content-container{
 	position: relative;
@@ -41,6 +42,7 @@ footer{
 	padding: 10px;
 	display: flex;
 	justify-content: center;
+	font-family: 'Little Miss Loudonbold';
 }
 #home-link{
 	color: inherit;
@@ -61,12 +63,13 @@ body{
 	background-color: rgba(165,238,237,0.41) !important;
 	margin: 0px;
 }
-h2{
-	border-bottom: 1px solid black !important;
-	font-family: 'Changa One', cursive;
+h3{
+	border-bottom: 2px solid black !important;
+	font-family: 'Barcade Brawl Regular';
+	padding-bottom: 1px;
 }
 li{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Space Mono', monospace;
 }
 #content-container{
 	position: relative;
@@ -123,6 +126,7 @@ footer{
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	font-family: 'Little Miss Loudonbold';
 }
 #home-link{
 	color: inherit;

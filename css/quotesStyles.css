@@ -7,11 +7,19 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto 5.25rem;
+}
+#quote-all-container{
+	position: relative;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-#wrapper{
+#quote-wrapper{
 	height: 60%;
 	width: 50%;
 	min-width: 170px;
@@ -23,7 +31,7 @@
 	height: 20%;
 }
 #random-btn{
-	width: 70%;
+	width: 85%;
 	height: 50%;
 	max-width: 300px;
 	background: rgba(0,180,255,1);
@@ -44,9 +52,9 @@
 	margin: 0;
 	color: white;
 	text-align: center;
-	font-family: 'Changa One', cursive;
+	font-family: 'Little Miss Loudonbold';
+	font-size: 1.15em;
 }
-
 #content-container{
 	width: 100%;
 	height: 80%;
@@ -58,7 +66,7 @@
 #quote-text{
 	transition: opacity 1s;
 	font-family: 'EB Garamond', serif;
-	font-size: 130%;
+	font-size: 1.25rem;
 }
 #quote-author{
 	text-align: right;
@@ -73,9 +81,9 @@ footer{
 	position: relative;
 	box-sizing: border-box;
 	border: 1px solid black;
-	height: 3.5em;
+	height: 5.25rem;
 	background-color: rgba(35,35,35,1.0);
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 #dialogue-container{
 	color:white;
@@ -90,6 +98,7 @@ footer{
 	padding: 10px;
 	display: flex;
 	justify-content: center;
+	font-family: 'Little Miss Loudonbold';
 }
 #home-link{
 	color: inherit;
@@ -98,6 +107,8 @@ footer{
 #home-link:hover{
 	color: rgba(210,210,210,1.0);
 }*/
+
+
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
@@ -114,6 +125,25 @@ body{
 	width: 100%;
 	height: 100%;
 	position: relative;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: auto;
+	grid-template-columns: auto;
+	-ms-grid-rows: auto 5.25rem;
+	grid-template-rows: auto 5.25rem;
+}
+#body-wrapper > *:nth-child(1){
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+#body-wrapper > *:nth-child(2){
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;
+}
+#quote-all-container{
+	position: relative;
+	height: 100%;
+	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -124,7 +154,7 @@ body{
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }
-#wrapper{
+#quote-wrapper{
 	height: 60%;
 	width: 50%;
 	min-width: 170px;
@@ -136,7 +166,7 @@ body{
 	height: 20%;
 }
 #random-btn{
-	width: 70%;
+	width: 85%;
 	height: 50%;
 	max-width: 300px;
 	background: rgba(0,180,255,1);
@@ -162,9 +192,9 @@ body{
 	margin: 0;
 	color: white;
 	text-align: center;
-	font-family: 'Changa One', cursive;
+	font-family: 'Little Miss Loudonbold';
+	font-size: 1.15em;
 }
-
 #content-container{
 	width: 100%;
 	height: 80%;
@@ -178,7 +208,7 @@ body{
 	-o-transition: opacity 1s;
 	transition: opacity 1s;
 	font-family: 'EB Garamond', serif;
-	font-size: 130%;
+	font-size: 1.25rem;
 }
 #quote-author{
 	text-align: right;
@@ -196,9 +226,9 @@ footer{
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	border: 1px solid black;
-	height: 3.5em;
+	height: 5.25rem;
 	background-color: rgba(35,35,35,1.0);
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 #dialogue-container{
 	color:white;
@@ -220,6 +250,7 @@ footer{
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	font-family: 'Little Miss Loudonbold';
 }
 #home-link{
 	color: inherit;
