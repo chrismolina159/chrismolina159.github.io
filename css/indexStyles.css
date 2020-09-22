@@ -11,22 +11,6 @@ body{
 	width: 100vw;
 	font-size: 100%;
 }
-@-webkit-keyframes cube-rotate{
-	0%{-webkit-transform: rotateX(0deg) rotateY(0deg);transform: rotateX(0deg) rotateY(0deg);}
-	100%{-webkit-transform: rotateX(360deg) rotateY(360deg);transform: rotateX(360deg) rotateY(360deg);}
-}
-@keyframes cube-rotate{
-	0%{-webkit-transform: rotateX(0deg) rotateY(0deg);transform: rotateX(0deg) rotateY(0deg);}
-	100%{-webkit-transform: rotateX(360deg) rotateY(360deg);transform: rotateX(360deg) rotateY(360deg);}
-}
-@-webkit-keyframes cube-rotated33{
-	0%{-webkit-transform: rotateX(0deg);transform: rotateX(0deg);}
-	100%{-webkit-transform: rotateX(360deg);transform: rotateX(360deg);}
-}
-@keyframes cube-rotated33{
-	0%{-webkit-transform: rotateX(0deg);transform: rotateX(0deg);}
-	100%{-webkit-transform: rotateX(360deg);transform: rotateX(360deg);}
-}
 
 #wrapper{
 	width: 100%;
@@ -61,7 +45,6 @@ body{
 	text-align: center;
 	margin: 0;
 }
-
 
 #content-container{
 	width: 100%;
