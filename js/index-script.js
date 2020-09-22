@@ -1,20 +1,20 @@
-var i = 0;
-var str1 = "Home Page";				//9
-var str2 = "Resume";				//6
-var str3 = "Classes Taken"; 		//13
-var str4 = "Github";				//6
-var str5 = "LinkedIn";				//8
-var str6 = "About Me";				//8
-var str7 = "Quotes";				//6
-var headerSpeed = 400;
+let i = 0;
+const str1 = "Home Page";				//9
+const str2 = "Resume";					//6
+const str3 = "Classes Taken"; 			//13
+const str4 = "Github";					//6
+const str5 = "LinkedIn";				//8
+const str6 = "About Me";				//8
+const str7 = "Quotes";					//6
+const headerSpeed = 400;
 
-var typewriter = document.getElementById("typewriter");
-var resume = document.getElementById("res");
-var classes = document.getElementById("cla");
-var github = document.getElementById("git");
-var linkedin = document.getElementById("lin");
-var about = document.getElementById("abt");
-var quotes = document.getElementById("quo");
+const typewriter = document.getElementById("typewriter");
+const resume = document.getElementById("res");
+const classes = document.getElementById("cla");
+const github = document.getElementById("git");
+const linkedin = document.getElementById("lin");
+const about = document.getElementById("abt");
+const quotes = document.getElementById("quo");
 
 //Possibly add margin line for extra typewriting effect
 function typeWrite(){
@@ -43,13 +43,5 @@ function typeWrite(){
 }
 
 $(document).ready(function(){
-	// typewriter.innerHTML = "Site under construction"
 	typeWrite();
-
-	// $("#resume-btn").click(function(){
-	// 	$("#cube").css("animation","test");
-	// 	$("#cube").css("animation-duration","2.5s");
-	// 	$("#cube").css("animation-timing-function","linear");
-	// 	$("#cube").css("animation-iteration-count", "2");
-	// });
 });
