@@ -1,6 +1,5 @@
-
 $(document).ready(function(){
-	var numShowing =  0;
+	let numShowing =  0;
 
 	function displayAll(){
 		setTimeout(function(){
