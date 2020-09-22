@@ -1,5 +1,5 @@
 /*WORKING CODE DON'T DELETE THIS ASPECT*/
-/*body{
+body{
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
@@ -8,6 +8,10 @@
 @keyframes cube-rotate{
 	0%{transform: rotateX(0deg) rotateY(0deg);}
 	100%{transform: rotateX(360deg) rotateY(360deg);}
+}
+@keyframes cube-rotated33{
+	0%{transform: rotateX(0deg);}
+	100%{transform: rotateX(360deg);}
 }
 
 #wrapper{
@@ -42,57 +46,63 @@
 	height: 70%;
 	position: relative;
 	background: rgba(165,238,237,0.41);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-#cube-container{
-	width: 30vh;
-	height: 30vh;
-	perspective: 600px;
+/*#cube-container{
+	width: 13.4em;
+	height: 13.4em;
+	perspective: 1000px;
 	margin: 0 auto;
-	position: relative;
+	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	border: 1px solid black;
 }
 #cube{
 	width: 100%;
 	height: 100%;
 	position: relative;
+	transform: translateZ(0);
 	transform-style: preserve-3d;
-	animation: cube-rotate;
+	animation: cube-rotated33;
 	animation-duration: 10s;
+	will-change: transform;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-}
-.face{
+}*/
+/*.face{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	opacity: 0.7;
 	border: 1px solid black;
-}
-.face:nth-child(1){
+}*/
+/*.face:nth-child(1){
 	background: rgba(255,0,0,0.5);
 	transform: rotateY(0deg) translateZ(15vh);
-}
-.face:nth-child(2){
+}*/
+/*.face:nth-child(2){
 	background: rgba(0,0,255,0.5);
 	transform: rotateY(90deg) translateZ(15vh);
-}
-.face:nth-child(3){
+}*/
+/*.face:nth-child(3){
 	background: rgba(0,255,0,0.5);
 	transform: rotateY(180deg) translateZ(15vh);
-}
-.face:nth-child(4){
+}*/
+/*.face:nth-child(4){
 	background: rgba(0,255,255,0.5);
 	transform: rotateY(-90deg) translateZ(15vh);
-}
-.face:nth-child(5){
+}*/
+/*.face:nth-child(5){
 	background: rgba(255,255,0,0.5);
 	transform: rotateX(90deg) translateZ(15vh);
-}
-.face:nth-child(6){
+}*/
+/*.face:nth-child(6){
 	background: rgba(255,0,255,0.5);
 	transform: rotateX(-90deg) translateZ(15vh);
-}
+}*/
 
 
 #footer-container{
@@ -225,7 +235,7 @@ h3{
 		width: 50%;
 		height: 33.34%;
 	}
-}*/
+}
 
 
 
@@ -236,7 +246,7 @@ h3{
 * Browsers: last 4 version
 */
 
-body{
+/*body{
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
@@ -502,4 +512,4 @@ h3{
 		width: 50%;
 		height: 33.34%;
 	}
-}
+}*/
