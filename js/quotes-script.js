@@ -1,4 +1,4 @@
-var quotes1 = [
+let quotes1 = [
 "If you want a happy ending, that depends of course on where you stop your story.",
 "Ave, Imperator, morituri te salutant.",
 "All hope abandon, ye who enter here.",
@@ -17,7 +17,7 @@ var quotes1 = [
 "Many that live deserve death.  And some that die deserve life.  Can you give it to them Frodo?  Do not be too eager to deal out death and judgement.  Even the very wise cannot see all ends.",
 "It is not true that people stop pursuing dreams because they grow old; they grow old because they stop pursuing dreams."
 ];
-var authors1 = [
+let authors1 = [
 "Orson Welles",
 "Suetonius, De Vita Caesarum",
 "Dante's Inferno",
@@ -36,13 +36,13 @@ var authors1 = [
 "Gandalf (LoTR: The Fellowship of the Ring)",
 "Gabriel Garcia Marquez"
 ];
-var quotes2 = [];
-var authors2 = [];
+let quotes2 = [];
+let authors2 = [];
 
-var quotesFlag = 0;
+let quotesFlag = 0;
 
-var quoteText = document.getElementById("quote-text");
-var quoteAuthor  = document.getElementById("quote-author");
+let quoteText = document.getElementById("quote-text");
+let quoteAuthor  = document.getElementById("quote-author");
 
 function setQuoteText(tempText){
 	quoteText.innerHTML = tempText;
