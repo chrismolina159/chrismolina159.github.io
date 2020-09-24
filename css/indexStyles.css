@@ -61,6 +61,36 @@ body{
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }
+#reveal-wrapper{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 100%;
+	background-color: black;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	-webkit-transition: 2s ease;
+	-o-transition: 2s ease;
+	transition: 2s ease;
+}
+#reveal-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-family: 'Little Miss Loudonbold';
+  font-size: 2rem;
+}
+.reveal-slide{
+	opacity: 1;
+	width: 100%;
+	left: 0;
+}
 
 #footer-container{
 	width: 100%;
@@ -104,7 +134,7 @@ body{
 	position: relative;
 	width: 16.6%;
 	height: 100%;
-	background: rgba(255,13,251,1);
+	background: rgba(255,13,251,.92);
 }
 #classes-btn{
 	position: relative;
@@ -116,7 +146,7 @@ body{
 	position: relative;
 	width: 16.7%;
 	height: 100%;
-	background: rgba(69,0,255,1);
+	background: rgba(69,0,255,.92);
 }
 #linkedin-btn{
 	position: relative;
@@ -128,13 +158,13 @@ body{
 	position: relative;
 	width: 16.7%;
 	height: 100%;
-	background: rgba(23,130,255,1);
+	background: rgba(23,130,255,.92);
 }
 #quotes-btn{
 	position: relative;
 	width: 16.6%;
 	height: 100%;
-	background: rgba(0,180,255,1);
+	background: rgba(0,180,255,.92);
 }
 span{
 	position: absolute;
