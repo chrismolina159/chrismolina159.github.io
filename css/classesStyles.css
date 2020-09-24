@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body{
 	background-color: rgba(218, 248, 247, 1.0) !important;
 	height: 100vh;
@@ -35,7 +42,6 @@ body{
 	        box-sizing: border-box;
 	padding: 0px 8px;
 }
-
 
 #display-hide-btn-container{
 	display: -webkit-box;
@@ -121,7 +127,6 @@ body{
 	display: none;
 	position: relative;
 }
-
 .dropdown-content p{
 	color: black;
 	display: block;
@@ -132,7 +137,6 @@ body{
 .show {
 	display: block;
 }
-
 
 footer{
 	width: 100%;
@@ -172,4 +176,17 @@ footer{
 }
 #home-link:hover{
 	color: rgba(210,210,210,1.0);
+}
+
+@media screen and (max-width: 480px){
+	#display-hide-btn-container{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		height: auto;
+	}
+	#display-all-btn-wrapper{
+		margin-bottom: 5px;
+	}
 }
