@@ -45,8 +45,26 @@ $(document).ready(function(){
 		}
 	}
 
-	function getTrue(){}
+	function rain(){
+		let increment = 0;
+		let drops = "";
+		let backDrops = "";
 
+		while (increment < 100) {
+			let randomPosition = (Math.floor(Math.random() * (96) + 3));
+			let randomIncAmt = (Math.floor(Math.random() * (5) + 5));
+			console.log("randomPosition:",randomPosition,"|| randomIncAmt:",randomIncAmt,"|| increment:", increment)
+
+			increment += randomIncAmt;
+			drops += `<div class="drop" style="left: ${increment}%; bottom: ${(2*randomIncAmt+99)}%; animation-delay: 0.${randomPosition}s; animation-duration: 0.5${randomPosition}s;"><div class="stem" style="animation-delay: 0.${randomPosition}s; animation-duration: 0.5${randomPosition}s;"></div><div class="splat" style="animation-delay: 0.${randomPosition}s; animation-duration: 0.5${randomPosition}s;"></div></div>`;
+			backDrops += `<div class="drop" style="right: ${increment}%; bottom: ${(2*randomIncAmt+99)}%; animation-delay: 0.${randomPosition}s; animation-duration: 0.5${randomPosition}s;"><div class="stem" style="animation-delay: 0.${randomPosition}s; animation-duration: 0.5${randomPosition}s;"></div><div class="splat" style="animation-delay: 0.${randomPosition}s; animation-duration: 0.5${randomPosition}s;"></div></div>`;
+		}
+
+		$('.front-row').append(drops);
+		$('.back-row').append(backDrops);
+	}
+
+	rain()
 	typeWrite();
 
 	$("a").click((evt)=>{
