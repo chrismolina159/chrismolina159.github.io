@@ -53,7 +53,7 @@ $(document).ready(function(){
 		while (increment < 100) {
 			let randomPosition = (Math.floor(Math.random() * (96) + 3));
 			let randomIncAmt = (Math.floor(Math.random() * (5) + 5));
-			console.log("randomPosition:",randomPosition,"|| randomIncAmt:",randomIncAmt,"|| increment:", increment)
+			// console.log("randomPosition:",randomPosition,"|| randomIncAmt:",randomIncAmt,"|| increment:", increment)
 
 			increment += randomIncAmt;
 			drops += `<div class="drop" style="left: ${increment}%; bottom: ${(2*randomIncAmt+99)}%; animation-delay: 0.${randomPosition}s; animation-duration: 0.5${randomPosition}s;"><div class="stem" style="animation-delay: 0.${randomPosition}s; animation-duration: 0.5${randomPosition}s;"></div><div class="splat" style="animation-delay: 0.${randomPosition}s; animation-duration: 0.5${randomPosition}s;"></div></div>`;
@@ -95,7 +95,7 @@ $(document).ready(function(){
 				reveal.firstElementChild.innerHTML = "Loading Quotes page"
 				break
 			default:
-				console.log("No matches there is an error")
+				// console.log("No matches there is an error")
 		}
 		reveal.style.backgroundColor = color
 		reveal.style.opacity = "1"
