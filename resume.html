@@ -9,160 +9,203 @@
 	<link rel="stylesheet" href="./fonts/LittleMissLoudFont.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/commonStyles.css">
 	<link rel="stylesheet" href="css/resumeStyles.css">
 	<link rel="stylesheet" href="fontawesome-5.14.0/css/all.min.css">
 </head>
 <body>
-	<div id="content-container">
-		<div id="work-container">
-			<div class="header">
-				<h3>Work Experience <i class="fas fa-briefcase fa-lg"></i></h3>
+	<div class="body-wrapper">
+		<div id="content-container">
+			<div id="work-container">
+				<div class="header">
+					<h3>Work Experience <i class="fas fa-briefcase fa-lg"></i></h3>
+				</div>
+				<div class="content">
+					<ul>
+						<div class="list-container">
+							<li><i>Amazon & AWS</i><span>, SDE I & SDE II</span> : Apr. 2021 - Present</li>
+							<ul>
+								<li>
+									Designed and implemented multiple services utilizing AWS services and primarily Java.
+								</li>
+								<li>
+									Worked in the AWS SageMaker org on the Neo service.
+								</li>
+								<li>
+									Mentored summer interns and guided them to complete their projects before the end of summer.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li><i>Marshall Wace</i><span>, Application Development Intern</span> : Jun. 2020 - Aug. 2020</li>
+							<ul>
+								<li>
+									Created data visualizations in Grafana through PromQL queries to display CPU and RAM consumption of users.
+								</li>
+								<li>
+									Corrected a slow React application in TypeScript to fix loading issues for specific users.
+								</li>
+								<li>
+									Researched and utilized unfamiliar technologies such as Elasticsearch/Kibana and GraphQL to assist with debugging.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li><i>NYU Fitness</i><span>, Fitness Attendant </span>: Feb. 2018 - Oct. 2018</li>
+							<ul>
+								<li>
+									Enforced the rules, created by staff, for all patrons.
+								</li>
+								<li>
+									Daily tasks included assisting patrons with questions and concerns and assisting supervisors and staff with any problems that may occur.
+								</li>
+								<li>
+									Additional duties were attentively monitoring the floor and closing up the gym at the end of the day.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li><i>SGP International</i><span>, Consultant </span>: May 2017 - Aug. 2017</li>
+							<ul>
+								<li>
+									Built a web application based off a mobile app with two other interns using JavaScript, HTML, and CSS.
+								</li>
+								<li>
+									Implemented CRUD APIs to allow users to save and/or update inputted information.
+								</li>
+								<li>
+									Used C# to update and modify backend code.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li><i>NYU Office of Events</i><span>, Office Assistant </span>: Feb. 2017 - May 2017</li>
+							<ul>
+								<li>
+									Completed general office work including copying, mailing, delivering, and taking inventory.
+								</li>
+								<li>
+									Prepared exact numbers of items for events and information sessions.
+								</li>
+								<li>
+									Answered questions students or parents had when they called the office.
+								</li>
+							</ul>
+						</div>
+					</ul>
+				</div>
 			</div>
-			<div class="content">
-				<ul>
-					<div class="list-container">
-						<li><i>Marshall Wace</i><span>, Application Development Intern</span> : Jun. 2020 - Aug. 2020</li>
-						<ul>
-							<li>
-								Created data visualizations in Grafana through PromQL queries to display CPU and RAM consumption of users. Corrected a slow React application in TypeScript to fix loading issues for specific users. Researched and utilized unfamiliar technologies such as Elasticsearch/Kibana and GraphQL to assist with debugging.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li><i>NYU Fitness</i><span>, Fitness Attendant </span>: Feb. 2018 - Oct. 2018</li>
-						<ul>
-							<li>
-								Enforced the rules, created by staff, for all patrons. Daily tasks included assisting patrons with questions and concerns and assisting supervisors and staff with any problems that may occur. Additional duties were attentively monitoring the floor and closing up the gym at the end of the day.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li><i>SGP International</i><span>, Consultant </span>: May 2017 - Aug. 2017</li>
-						<ul>
-							<li>
-								Built a web application based off a mobile app with two other interns using JavaScript, HTML, and CSS. Retrieved and sent data through Ajax calls to save and/or update user inputted information. Amended backend C# code to reflect adjustments made to the database.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li><i>NYU Office of Events</i><span>, Office Assistant </span>: Feb. 2017 - May 2017</li>
-						<ul>
-							<li>
-								Completed general office work including copying, mailing, delivering, and taking inventory. Prepared exact numbers of items for events and information sessions. Answered questions students or parents had when they called the office.
-							</li>
-						</ul>
-					</div>
-				</ul>
+
+			<div id="side-container">
+				<div class="header">
+					<h3>Side Projects <i class="fas fa-scroll"></i><i class="fas fa-feather-alt"></i></h3>
+				</div>
+				<div class="content">
+					<ul>
+						<div class="list-container">
+							<li>Biazza</li>
+							<ul>
+								<li>
+									A play on words of the Piazza application, Biazza is a Node.js semester long project built using React, Express, MongoDB, and Docker. The application combines the functionality of a website like Stack Overflow with the use/feel of a college portal.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li>Chess Opening Simulator</li>
+							<ul>
+								<li>
+									A text-based chess game that allows users to practice various chess openings such as the Ruy
+									Lopez Opening or the Slav Defense, by choosing which pieces to move for yourself and for the
+									CPU. If the move is considered incorrect by not matching how the opening is supposed to play
+									out, users can retry and input a different move. Users continue to input their decisions until the
+									opening is complete.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li>This website</li>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<div id="language-container">
+				<div class="header">
+					<h3>Languages <i class="far fa-keyboard fa-lg"></i></h3>
+				</div>
+				<div class="content">
+					<ul>
+						<div class="list-container">
+							<li>Java</li>
+							<ul>
+								<li>
+									4+ years of coding in Java and the language that I am the most comfortable with. Have completed multiple homework assignments/school projects in Java.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li>HTML, CSS, JS</li>
+							<ul>
+								<li>
+									2+ years of coding in HTML, CSS, and JS. Utilized these languages in an internship as well as in the classroom for projects/assignments. Used these languages a lot for the completion of my minor.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li>C</li>
+							<ul>
+								<li>
+									1 year of coding in C. Have completed a small number of homework assignments in C. One of my least comfortable languages, but at one point in time was required to write only C.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li>Node.js, React.js</li>
+							<ul>
+								<li>
+									< 1 year of using Node and React. Had to use these technologies for a semester long project and during an internship. Have a basic understanding of React, components, and states and am able to use these again with research.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li>Python, SQL</li>
+							<ul>
+								<li>
+									< 1 year of coding in Python and SQL. Have only had to use them in specific situations, but due to the simplicity of the languages, I have had no trouble picking them up on and off over the years.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li>C#</li>
+							<ul>
+								<li>
+									Briefly used for specific tasks during internships. Not too comfortable with C# but at one point needed to research and utlilize it.
+								</li>
+							</ul>
+						</div>
+						<div class="list-container">
+							<li>Spanish</li>
+							<ul>
+								<li>
+									4+ years of studying the Spanish language. Conversational proficiency. Not a programming language but still included because it is a language.
+								</li>
+							</ul>
+						</div>
+					</ul>
+				</div>
 			</div>
 		</div>
-
-		<div id="side-container">
-			<div class="header">
-				<h3>Side Projects <i class="fas fa-scroll"></i><i class="fas fa-feather-alt"></i></h3>
-			</div>
-			<div class="content">
-				<ul>
-					<div class="list-container">
-						<li>Biazza</li>
-						<ul>
-							<li>
-								A play on words of the Piazza application, Biazza is a Node.js semester long project built using React, Express, MongoDB, and Docker. The application combines the functionality of a website like Stack Overflow with the use/feel of a college portal.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li>Chess Opening Simulator</li>
-						<ul>
-							<li>
-								A text-based chess game that allows users to practice various chess openings such as the Ruy
-								Lopez Opening or the Slav Defense, by choosing which pieces to move for yourself and for the
-								CPU. If the move is considered incorrect by not matching how the opening is supposed to play
-								out, users can retry and input a different move. Users continue to input their decisions until the
-								opening is complete.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li>This website</li>
-					</div>
-				</ul>
-			</div>
-		</div>
-
-		<div id="language-container">
-			<div class="header">
-				<h3>Languages <i class="far fa-keyboard fa-lg"></i></h3>
-			</div>
-			<div class="content">
-				<ul>
-					<div class="list-container">
-						<li>Java</li>
-						<ul>
-							<li>
-								4+ years of coding in Java and the language that I am the most comfortable with. Have completed multiple homework assignments/school projects in Java.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li>HTML, CSS, JS</li>
-						<ul>
-							<li>
-								2+ years of coding in HTML, CSS, and JS. Utilized these languages in an internship as well as in the classroom for projects/assignments. Used these languages a lot for the completion of my minor.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li>C</li>
-						<ul>
-							<li>
-								1 year of coding in C. Have completed a small number of homework assignments in C. One of my least comfortable languages, but at one point in time was required to write only C.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li>Node.js, React.js</li>
-						<ul>
-							<li>
-								< 1 year of using Node and React. Had to use these technologies for a semester long project and during an internship. Have a basic understanding of React, components, and states and am able to use these again with research.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li>Python, SQL</li>
-						<ul>
-							<li>
-								< 1 year of coding in Python and SQL. Have only had to use them in specific situations, but due to the simplicity of the languages, I have had no trouble picking them up on and off over the years.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li>C#</li>
-						<ul>
-							<li>
-								Briefly used for specific tasks during internships. Not too comfortable with C# but at one point needed to research and utlilize it.
-							</li>
-						</ul>
-					</div>
-					<div class="list-container">
-						<li>Spanish</li>
-						<ul>
-							<li>
-								4+ years of studying the Spanish language. Conversational proficiency. Not a programming language but still included because it is a language.
-							</li>
-						</ul>
-					</div>
-				</ul>
-			</div>
+		<div class="footer-div">
+			<footer>
+				<div id="dialogue-container">
+					<a id="home-link" href="./index.html">
+						<span id="home-page-icon-wrapper">
+							<i class="fas fa-home"></i>
+						</span>Go Home
+					</a>
+				</div>
+			</footer>
 		</div>
 	</div>
-	<footer>
-		<div id="dialogue-container">
-			<a id="home-link" href="./index.html">
-				<span id="home-page-icon-wrapper">
-					<i class="fas fa-home"></i>
-				</span>Go Home
-			</a>
-		</div>
-	</footer>
 </body>
 </html>

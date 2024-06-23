@@ -9,14 +9,17 @@ body{
 	background-color: rgba(165,238,237,0.41) !important;
 	margin: 0px;
 }
+
 h3{
 	border-bottom: 2px solid black !important;
 	font-family: 'Barcade Brawl Regular';
 	padding-bottom: 1px;
 }
+
 li{
 	font-family: 'Space Mono', monospace;
 }
+
 #content-container{
 	position: relative;
 	display: -ms-grid;
@@ -27,57 +30,22 @@ li{
 	grid-template-rows: auto auto auto;
 	margin: 0px 8px;
 }
+
 #content-container > *:nth-child(1){
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 }
+
 #content-container > *:nth-child(2){
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
 }
+
 #content-container > *:nth-child(3){
 	-ms-grid-row: 3;
 	-ms-grid-column: 1;
 }
+
 .list-container{
 	margin-bottom: 5px;
-}
-footer{
-	width: 100%;
-	position: relative;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	border: 1px solid black;
-	height: 3.5em;
-	background-color: rgba(35,35,35,1.0);
-	font-size: 1.5em;
-}
-#dialogue-container{
-	color:white;
-	width: 7em;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
-	border: 3px solid white;
-	border-radius: 10px;
-	padding: 10px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	font-family: 'Little Miss Loudonbold';
-}
-#home-link{
-	color: inherit;
-	text-decoration: none;
-}
-#home-link:hover{
-	color: rgba(210,210,210,1.0);
 }
